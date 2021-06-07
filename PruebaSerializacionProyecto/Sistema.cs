@@ -13,10 +13,15 @@ namespace PruebaSerializacionProyecto
     {
         public List<string> Empleados;
         public Dictionary<string, Combustible> Combustibles;
+        public List<Venta> Ventas;
 
         public Sistema()
         {
             Empleados = new List<string>() { "Matias", "Jose", "Marcos", "Carla" };
+
+            Ventas = new List<Venta>();
+
+
             Combustibles = new Dictionary<string, Combustible>()
             {
                 {"super", new Combustible("Super",0,0) },

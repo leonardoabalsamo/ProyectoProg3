@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace PruebaSerializacionProyecto
 {
-    public partial class Form1 : Form
+    public partial class FormInicio : Form
     {
         Sistema empleados;
-        public Form1(ref Sistema s)
+        private Menu frmMenu;
+        public FormInicio(ref Sistema s)
         {
-            InitializeComponent();
             empleados = s;
+            frmMenu = new Menu(ref empleados , this); // Pasamos la referencia del inicio a Menu
+
+            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,11 +33,10 @@ namespace PruebaSerializacionProyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu(ref empleados);
             string bienvenida = "Bienvenido" + " " + comboBox1.SelectedItem.ToString();
-            menu.label = bienvenida;
-            menu.Show();
-            this.Hide();
+            frmMenu.label = bienvenida;
+            frmMenu.Show(); // Mostramos formulario Menu
+            this.Hide(); // Ocultamos formulario1
         }
 
     }

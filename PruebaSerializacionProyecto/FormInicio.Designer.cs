@@ -1,7 +1,7 @@
 ﻿
 namespace PruebaSerializacionProyecto
 {
-    partial class Form1
+    partial class FormInicio
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,46 +30,61 @@ namespace PruebaSerializacionProyecto
         private void InitializeComponent()
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ingresoMenu = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(140, 166);
+            this.comboBox1.Location = new System.Drawing.Point(53, 79);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 21);
+            this.comboBox1.Size = new System.Drawing.Size(257, 24);
             this.comboBox1.TabIndex = 0;
             // 
-            // button1
+            // ingresoMenu
             // 
-            this.button1.Location = new System.Drawing.Point(269, 213);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ingresoMenu.Location = new System.Drawing.Point(53, 125);
+            this.ingresoMenu.Name = "ingresoMenu";
+            this.ingresoMenu.Size = new System.Drawing.Size(257, 34);
+            this.ingresoMenu.TabIndex = 1;
+            this.ingresoMenu.Text = "Ingresar";
+            this.ingresoMenu.UseVisualStyleBackColor = true;
+            this.ingresoMenu.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(404, 291);
+            this.btnSalir.Location = new System.Drawing.Point(207, 206);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(123, 46);
+            this.btnSalir.Size = new System.Drawing.Size(103, 32);
             this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // label2
             // 
-            this.ClientSize = new System.Drawing.Size(583, 369);
+            this.label2.AccessibleName = "";
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.Location = new System.Drawing.Point(50, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(163, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Seleccione el Empleado:";
+            // 
+            // FormInicio
+            // 
+            this.ClientSize = new System.Drawing.Size(342, 250);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ingresoMenu);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form1";
+            this.Name = "FormInicio";
+            this.Text = "Estación de Servicio - Sistema Gestión";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -78,8 +93,9 @@ namespace PruebaSerializacionProyecto
         private System.Windows.Forms.ComboBox usuariosBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ingresoMenu;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label2;
     }
 }
 
