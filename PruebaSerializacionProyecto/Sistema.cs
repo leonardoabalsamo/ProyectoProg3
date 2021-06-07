@@ -12,7 +12,7 @@ namespace PruebaSerializacionProyecto
     public class Sistema
     {
         public List<string> Empleados;
-        public Dictionary<string, Combustible> Combustibles;
+        public Dictionary<string,Combustible> Combustibles;
         public List<Venta> Ventas;
 
         public Sistema()
@@ -40,8 +40,6 @@ namespace PruebaSerializacionProyecto
         {
             return Combustibles;
         }
-
-
 
     }
 }

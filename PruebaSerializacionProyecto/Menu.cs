@@ -27,7 +27,7 @@ namespace PruebaSerializacionProyecto
             frmCarga = new FormCarga(ref empleados , this);
             frmDescarga = new FormDescarga(ref empleados, this);
             frmReporte = new FormReporte(this);
-            frmStock = new FormStock(this);
+            frmStock = new FormStock(ref empleados,this);
             InitializeComponent();
         }
 
