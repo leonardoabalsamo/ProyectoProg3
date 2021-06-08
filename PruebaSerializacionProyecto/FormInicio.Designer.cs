@@ -40,7 +40,7 @@ namespace PruebaSerializacionProyecto
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(53, 79);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(257, 24);
+            this.comboBox1.Size = new System.Drawing.Size(257, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // ingresoMenu
@@ -61,6 +61,7 @@ namespace PruebaSerializacionProyecto
             this.btnSalir.TabIndex = 2;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // label2
             // 
@@ -69,7 +70,7 @@ namespace PruebaSerializacionProyecto
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.Location = new System.Drawing.Point(50, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 17);
+            this.label2.Size = new System.Drawing.Size(124, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Seleccione el Empleado:";
             // 

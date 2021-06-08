@@ -271,6 +271,7 @@ namespace PruebaSerializacionProyecto
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormStock";
             this.Text = "FormStock";
+            this.Activated += new System.EventHandler(this.FormStock_Activated);
             this.Load += new System.EventHandler(this.FormStock_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

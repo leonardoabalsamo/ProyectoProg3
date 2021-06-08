@@ -47,5 +47,20 @@ namespace PruebaSerializacionProyecto
             barraProgresoUltra.Value = Int32.Parse(empleado.stockActual("Premium").ToString());
 
         }
+
+        private void FormStock_Activated(object sender, EventArgs e)
+        {
+            stockSuperActual.Text = empleado.stockActual("Super").ToString();
+            barraProgresoSuper.Value = Int32.Parse(empleado.stockActual("Super").ToString());
+
+            stockDieselActual.Text = empleado.stockActual("Diesel").ToString();
+            barraProgresoDiesel.Value = Int32.Parse(empleado.stockActual("Diesel").ToString());
+
+            stockPremiumActual.Text = empleado.stockActual("Premium").ToString();
+            barraProgresoPremium.Value = Int32.Parse(empleado.stockActual("Premium").ToString());
+
+            stockUltraActual.Text = empleado.stockActual("Ultra Diesel").ToString();
+            barraProgresoUltra.Value = Int32.Parse(empleado.stockActual("Premium").ToString());
+        }
     }
 }

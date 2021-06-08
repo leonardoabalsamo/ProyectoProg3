@@ -31,54 +31,30 @@ namespace PruebaSerializacionProyecto
 
         private void FormCarga_Load(object sender, EventArgs e)
         {
+            /*Inicializo Stock y coloco inputs en 0*/
             stockSuper.Text = empleados.stockActual("Super").ToString();
             StockDiesel.Text = empleados.stockActual("Diesel").ToString();
             StockPremium.Text = empleados.stockActual("Premium").ToString();
             StockUltra.Text = empleados.stockActual("Ultra Diesel").ToString();
-            //Recorro la lista de los combustibles y los muestro en los Inputs
+            IngresoSuper.Text = "0";
+            IngresoDiesel.Text = "0";
+            IngresoPremium.Text = "0";
+            IngresoUltra.Text = "0";
 
-            /*foreach (KeyValuePair<string,Combustible> item in empleados.getCombustibles())
-            {
-                if (String.Equals(item.Key,"super")) // SUPER
-                {
-                    var auxiliarSuper = item.Value.Stock;
-                    var auxiliarPrecioSuper = item.Value.precio;
-
-                    stockSuper.Text = auxiliarSuper.ToString();
-                    PrecioSuper.Text = auxiliarPrecioSuper.ToString();
-                }
-                if (String.Equals(item.Key, "diesel")) // DIESEL
-                {
-                    var auxiliarDiesel = item.Value.Stock;
-                    var auxiliarPrecioDiesel = item.Value.precio;
-
-                    StockDiesel.Text = auxiliarDiesel.ToString();
-                    PrecioDiesel.Text = auxiliarPrecioDiesel.ToString();
-
-                }
-                if (String.Equals(item.Key, "premium")) // PREMIUM
-                {
-                    var auxiliarPremium = item.Value.Stock;
-                    var auxiliarPrecioPremium = item.Value.precio;
-
-                    StockPremium.Text = auxiliarPremium.ToString();
-                    PrecioPremium.Text = auxiliarPrecioPremium.ToString();
-
-                }
-                if (String.Equals(item.Key, "ultra")) // ULTRA
-                {
-                    var auxiliarUltra = item.Value.Stock;
-                    var auxiliarPrecioUltra = item.Value.precio;
-
-                    StockUltra.Text = auxiliarUltra.ToString();
-                    PrecioUltra.Text = auxiliarPrecioUltra.ToString();
-
-                }
-            }*/
+            /*Inicializo Precio y coloco inputs en 0*/
+            PrecioSuper.Text = empleados.precioActual("Super").ToString();
+            PrecioDiesel.Text = empleados.precioActual("Diesel").ToString();
+            PrecioPremium.Text = empleados.precioActual("Premium").ToString();
+            PrecioUltra.Text = empleados.precioActual("Ultra Diesel").ToString();
+            nuevoPrecioSuper.Text = "0";
+            nuevoPrecioDiesel.Text = "0";
+            nuevoPrecioPremium.Text = "0";
+            nuevoPrecioUltra.Text = "0";
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            /*Actualizo Stock y coloco inputs en 0*/
             stockSuper.Text = empleados.actualizarStock("Super", IngresoSuper.Text).ToString();
             StockDiesel.Text = empleados.actualizarStock("Diesel", IngresoDiesel.Text).ToString();
             StockPremium.Text = empleados.actualizarStock("Premium", IngresoPremium.Text).ToString();
@@ -88,47 +64,16 @@ namespace PruebaSerializacionProyecto
             IngresoPremium.Text = "0";
             IngresoUltra.Text = "0";
 
-            // Recorro nuevamente la lista pero sumo lo ingresado en los inputs de carga
-
-            /*foreach (KeyValuePair<string, Combustible> item in empleados.getCombustibles())
-            {
-                if (String.Equals(item.Key, "super"))
-                {
-                    decimal auxiliarSuper = Convert.ToDecimal(IngresoSuper.Text);
-                    PrecioSuper.Text = nuevoPrecioSuper.Text;
-
-                    var sumasuper = item.Value.Stock + auxiliarSuper;
-                    stockSuper.Text = sumasuper.ToString();
-                    item.Value.Stock = sumasuper;
-                }
-                if (String.Equals(item.Key, "diesel"))
-                {
-                    decimal auxiliarDiesel = Convert.ToDecimal(IngresoDiesel.Text);
-                    PrecioDiesel.Text = nuevoPrecioDiesel.Text;
-
-                    var sumadiesel = item.Value.Stock + auxiliarDiesel;
-                    StockDiesel.Text = sumadiesel.ToString();
-                    item.Value.Stock = sumadiesel;
-                }
-                if (String.Equals(item.Key, "premium"))
-                {
-                    decimal auxiliarPremium = Convert.ToDecimal(IngresoPremium.Text);
-                    PrecioPremium.Text = nuevoPrecioPremium.Text;
-
-                    var sumapremium = item.Value.Stock + auxiliarPremium;
-                    StockPremium.Text = sumapremium.ToString();
-                    item.Value.Stock = sumapremium;
-                }
-                if (String.Equals(item.Key, "ultra"))
-                {
-                    decimal auxiliarUltra = Convert.ToDecimal(IngresoUltra.Text);
-                    PrecioUltra.Text = nuevoPrecioUltra.Text;
-
-                    var sumaultra = item.Value.Stock + auxiliarUltra;
-                    StockUltra.Text = sumaultra.ToString();
-                    item.Value.Stock = sumaultra;
-                }
-            }*/
+            /*Actualizo Precio y coloco inputs en 0*/
+            PrecioSuper.Text = empleados.actualizarPrecio("Super", nuevoPrecioSuper.Text).ToString();
+            PrecioDiesel.Text = empleados.actualizarPrecio("Diesel", nuevoPrecioDiesel.Text).ToString();
+            PrecioPremium.Text = empleados.actualizarPrecio("Premium", nuevoPrecioPremium.Text).ToString();
+            PrecioUltra.Text = empleados.actualizarPrecio("Ultra Diesel", nuevoPrecioUltra.Text).ToString();
+            nuevoPrecioSuper.Text = "0";
+            nuevoPrecioDiesel.Text = "0";
+            nuevoPrecioPremium.Text = "0";
+            nuevoPrecioUltra.Text = "0";
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

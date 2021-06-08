@@ -28,6 +28,8 @@ namespace PruebaSerializacionProyecto
             {
                 comboBox1.Items.Add(item);
             }
+
+            comboBox1.SelectedIndex = 0; 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,5 +40,9 @@ namespace PruebaSerializacionProyecto
             this.Hide(); // Ocultamos formulario1
         }
 
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

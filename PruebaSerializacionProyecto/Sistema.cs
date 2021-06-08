@@ -35,16 +35,6 @@ namespace PruebaSerializacionProyecto
             Combustibles.Add(new Combustible("Ultra Diesel", 0, 0));
         }
 
-        public List<string> empleados
-        {
-            get { return Empleados; }
-        }
-
-        public List<Combustible> getCombustibles()
-        {
-            return Combustibles;
-        }
-
         public List<string> cargaEmpleado()
         {
             List<string> arrayEmpleados = new List<string>(); 
@@ -91,5 +81,38 @@ namespace PruebaSerializacionProyecto
             return stockActualizado;
         }
 
+        public decimal precioActual(string pal)
+        {
+            decimal valor = 0;
+            foreach (var item in Combustibles)
+            {
+                if (String.Equals(item.nombre, pal))
+                {
+                    valor = item.Precio;
+                }
+            }
+
+            if (valor != 0)
+            {
+                return valor;
+            }
+            else return 0;
+        }
+
+        public decimal actualizarPrecio(string nombre, string precioNuevo)
+        {
+            decimal precioActualizado = 0;
+
+            foreach (var item in Combustibles)
+            {
+                if (String.Equals(item.nombre, nombre))
+                {
+                    item.Precio = Decimal.Parse(precioNuevo);
+                    precioActualizado = item.Precio;
+                }
+            }
+
+            return precioActualizado;
+        }
     }
 }
