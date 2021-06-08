@@ -34,7 +34,7 @@ namespace PruebaSerializacionProyecto
 
         private void FormStock_Load(object sender, EventArgs e)
         {
-            foreach (var item in empleado.getCombustibles())
+           /* foreach (var item in empleado.getCombustibles())
             {
                 if (String.Equals(item.Key,"super"))
                 {
@@ -56,7 +56,7 @@ namespace PruebaSerializacionProyecto
                     stockUltraActual.Text = item.Value.Stock.ToString();
                     barraProgresoUltra.Value = Int32.Parse(item.Value.stock.ToString());
                 }
-            }
+            }*/
         }
     }
 }

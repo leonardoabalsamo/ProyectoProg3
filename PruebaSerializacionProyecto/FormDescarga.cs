@@ -28,7 +28,7 @@ namespace PruebaSerializacionProyecto
         {
             //Recorro la lista de los combustibles, muestro litros y precios.
 
-            foreach (KeyValuePair<string, Combustible> item in empleados.getCombustibles())
+           /* foreach (KeyValuePair<string, Combustible> item in empleados.getCombustibles())
             {
                 if (String.Equals(item.Key, "super")) // SUPER
                 {
@@ -50,7 +50,7 @@ namespace PruebaSerializacionProyecto
                     var auxiliarUltra = item.Value.Stock;
                     StockUltra.Text = auxiliarUltra.ToString();
                 }
-            }
+            }*/
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

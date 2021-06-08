@@ -33,7 +33,7 @@ namespace PruebaSerializacionProyecto
         {
             //Recorro la lista de los combustibles y los muestro en los Inputs
 
-            foreach (KeyValuePair<string,Combustible> item in empleados.getCombustibles())
+            /*foreach (KeyValuePair<string,Combustible> item in empleados.getCombustibles())
             {
                 if (String.Equals(item.Key,"super")) // SUPER
                 {
@@ -70,14 +70,14 @@ namespace PruebaSerializacionProyecto
                     PrecioUltra.Text = auxiliarPrecioUltra.ToString();
 
                 }
-            }
+            }*/
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             // Recorro nuevamente la lista pero sumo lo ingresado en los inputs de carga
 
-            foreach (KeyValuePair<string, Combustible> item in empleados.getCombustibles())
+            /*foreach (KeyValuePair<string, Combustible> item in empleados.getCombustibles())
             {
                 if (String.Equals(item.Key, "super"))
                 {
@@ -115,7 +115,7 @@ namespace PruebaSerializacionProyecto
                     StockUltra.Text = sumaultra.ToString();
                     item.Value.Stock = sumaultra;
                 }
-            }
+            }*/
         }
 
         private void button1_Click(object sender, EventArgs e)

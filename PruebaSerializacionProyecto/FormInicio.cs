@@ -24,11 +24,7 @@ namespace PruebaSerializacionProyecto
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            foreach (var item in empleados.empleados)
-            {
-                comboBox1.Items.Add(item);
-            }
+            //comboBox1 = empleados.cargaEmpleado();
         }
 
         private void button1_Click(object sender, EventArgs e)
