@@ -31,6 +31,10 @@ namespace PruebaSerializacionProyecto
 
         private void FormCarga_Load(object sender, EventArgs e)
         {
+            stockSuper.Text = empleados.stockActual("Super").ToString();
+            StockDiesel.Text = empleados.stockActual("Diesel").ToString();
+            StockPremium.Text = empleados.stockActual("Premium").ToString();
+            StockUltra.Text = empleados.stockActual("Ultra Diesel").ToString();
             //Recorro la lista de los combustibles y los muestro en los Inputs
 
             /*foreach (KeyValuePair<string,Combustible> item in empleados.getCombustibles())
@@ -75,6 +79,15 @@ namespace PruebaSerializacionProyecto
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            stockSuper.Text = empleados.actualizarStock("Super", IngresoSuper.Text).ToString();
+            StockDiesel.Text = empleados.actualizarStock("Diesel", IngresoDiesel.Text).ToString();
+            StockPremium.Text = empleados.actualizarStock("Premium", IngresoPremium.Text).ToString();
+            StockUltra.Text = empleados.actualizarStock("Ultra Diesel", IngresoUltra.Text).ToString();
+            IngresoSuper.Text = "0";
+            IngresoDiesel.Text = "0";
+            IngresoPremium.Text = "0";
+            IngresoUltra.Text = "0";
+
             // Recorro nuevamente la lista pero sumo lo ingresado en los inputs de carga
 
             /*foreach (KeyValuePair<string, Combustible> item in empleados.getCombustibles())

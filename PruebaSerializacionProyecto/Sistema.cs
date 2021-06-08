@@ -45,16 +45,50 @@ namespace PruebaSerializacionProyecto
             return Combustibles;
         }
 
-        public ComboBox cargaEmpleado()
+        public List<string> cargaEmpleado()
         {
-            ComboBox listado = new ComboBox();
+            List<string> arrayEmpleados = new List<string>(); 
 
             foreach (var item in Empleados)
             {
-                listado.Items.Add(item);
+                arrayEmpleados.Add(item);
             }
 
-            return listado;
+            return arrayEmpleados;
+        }
+
+        public decimal stockActual(string pal)
+        {
+            decimal valor = 0;
+            foreach (var item in Combustibles)
+            {
+                if (String.Equals(item.nombre,pal))
+                {
+                    valor = item.Stock;
+                }
+            }
+
+            if (valor != 0)
+            {
+                return valor;
+            }
+            else return 0;
+        }
+
+        public decimal actualizarStock(string nombre, string ingreso)
+        {
+            decimal stockActualizado = 0;
+
+            foreach (var item in Combustibles)
+            {
+                if (String.Equals(item.nombre,nombre))
+                {
+                    item.Stock = item.Stock + Decimal.Parse(ingreso);
+                    stockActualizado = item.Stock;
+                }
+            }
+                
+            return stockActualizado;
         }
 
     }
