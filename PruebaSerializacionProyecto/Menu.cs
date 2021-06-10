@@ -20,14 +20,14 @@ namespace PruebaSerializacionProyecto
         private FormReporte frmReporte;
         private FormStock frmStock;
 
-        public Menu(ref Sistema emp , Form inicio)
+        public Menu(Sistema emp , Form inicio)
         {
             empleados = emp;
             frmInicio = (FormInicio)inicio;
-            frmCarga = new FormCarga(ref empleados , this);
-            frmDescarga = new FormDescarga(ref empleados, this);
+            frmCarga = new FormCarga(empleados , this);
+            frmDescarga = new FormDescarga(empleados, this);
             frmReporte = new FormReporte(this);
-            frmStock = new FormStock(ref empleados,this);
+            frmStock = new FormStock(empleados,this);
             InitializeComponent();
         }
 

@@ -12,18 +12,18 @@ namespace PruebaSerializacionProyecto
     [Serializable]
     public class Sistema
     {
-        public List<string> Empleados;
+        public List<Empleado> Empleados;
         public List<Combustible> Combustibles;
         public List<Venta> Ventas;
 
         public Sistema()
         {
-            Empleados = new List<string>();
-            Empleados.Add("Matias");
-            Empleados.Add("Jose");
-            Empleados.Add("Leonardo");
-            Empleados.Add("Carla");
-            Empleados.Add("Marta");
+            Empleados = new List<Empleado>();
+            Empleados.Add(new Empleado("Matias"));
+            Empleados.Add(new Empleado("Maira"));
+            Empleados.Add(new Empleado("Leonardo"));
+            Empleados.Add(new Empleado("Carla"));
+            Empleados.Add(new Empleado("Ezequiel"));
 
             Ventas = new List<Venta>();
 
@@ -41,7 +41,7 @@ namespace PruebaSerializacionProyecto
 
             foreach (var item in Empleados)
             {
-                arrayEmpleados.Add(item);
+                arrayEmpleados.Add(item.Nombre);
             }
 
             return arrayEmpleados;

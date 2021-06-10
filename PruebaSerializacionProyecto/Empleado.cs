@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace PruebaSerializacionProyecto
 {
-    class Empleado
+    [Serializable]
+    public class Empleado
     {
+        public string nombre;
+
+        public Empleado(string nom)
+        {
+            nombre = nom;
+        }
+
+        public string Nombre { get { return nombre; } set { nombre = value; } }
     }
 }

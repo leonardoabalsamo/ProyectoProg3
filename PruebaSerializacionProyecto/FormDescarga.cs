@@ -17,7 +17,7 @@ namespace PruebaSerializacionProyecto
 
 
 
-        public FormDescarga(ref Sistema emp , Menu menu)
+        public FormDescarga(Sistema emp , Menu menu)
         {
             frmMenu = (Menu)menu;
             empleados = emp;

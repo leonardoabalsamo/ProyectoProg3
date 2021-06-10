@@ -14,7 +14,7 @@ namespace PruebaSerializacionProyecto
     {
         Menu frmMenu;
         Sistema empleado;
-        public FormStock(ref Sistema emp,Menu menu)
+        public FormStock(Sistema emp,Menu menu)
         {
             frmMenu = menu;
             empleado = emp;

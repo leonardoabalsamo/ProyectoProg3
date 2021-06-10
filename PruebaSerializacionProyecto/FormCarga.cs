@@ -17,7 +17,7 @@ namespace PruebaSerializacionProyecto
         private Sistema empleados;
         private Menu frmMenu;
 
-        public FormCarga(ref Sistema emp , Form Menu)
+        public FormCarga(Sistema emp , Form Menu)
         {
             empleados = emp;
             frmMenu = (Menu)Menu;

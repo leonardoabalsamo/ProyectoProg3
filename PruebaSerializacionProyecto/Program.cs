@@ -29,7 +29,7 @@ namespace PruebaSerializacionProyecto
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormInicio(ref sistema));
+            Application.Run(new FormInicio(sistema));
 
 
             Stream flujo2 = File.Create("sistema.bin");

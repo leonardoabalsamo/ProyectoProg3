@@ -14,21 +14,17 @@ namespace PruebaSerializacionProyecto
     {
         Sistema empleados;
         private Menu frmMenu;
-        public FormInicio(ref Sistema s)
+        public FormInicio(Sistema s)
         {
             empleados = s;
-            frmMenu = new Menu(ref empleados , this); // Pasamos la referencia del inicio a Menu
+            frmMenu = new Menu(empleados , this); // Pasamos la referencia del inicio a Menu
 
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach (var item in empleados.cargaEmpleado())
-            {
-                comboBox1.Items.Add(item);
-            }
-
+            comboBox1.Items.AddRange(empleados.cargaEmpleado().ToArray());
             comboBox1.SelectedIndex = 0; 
         }
 
