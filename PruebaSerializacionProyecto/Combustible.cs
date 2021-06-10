@@ -9,9 +9,9 @@ namespace PruebaSerializacionProyecto
     [Serializable]
     public class Combustible
     {
-        public string nombre;
-        public decimal stock;
-        public decimal precio;
+        private string nombre;
+        private decimal stock;
+        private decimal precio;
 
         public Combustible(string n ,decimal s,decimal p)
         {

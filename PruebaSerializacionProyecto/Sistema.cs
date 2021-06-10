@@ -12,9 +12,9 @@ namespace PruebaSerializacionProyecto
     [Serializable]
     public class Sistema
     {
-        public List<Empleado> Empleados;
-        public List<Combustible> Combustibles;
-        public List<Venta> Ventas;
+        private List<Empleado> Empleados;
+        private List<Combustible> Combustibles;
+        private List<Venta> Ventas;
 
         public Sistema()
         {
@@ -52,7 +52,7 @@ namespace PruebaSerializacionProyecto
             decimal valor = 0;
             foreach (var item in Combustibles)
             {
-                if (String.Equals(item.nombre,pal))
+                if (String.Equals(item.Nombre,pal))
                 {
                     valor = item.Stock;
                 }
@@ -68,10 +68,14 @@ namespace PruebaSerializacionProyecto
         public decimal actualizarStock(string nombre, string ingreso)
         {
             decimal stockActualizado = 0;
+            if (String.Equals(ingreso,""))
+            {
+                ingreso = "0";
+            }
 
             foreach (var item in Combustibles)
             {
-                if (String.Equals(item.nombre,nombre))
+                if (String.Equals(item.Nombre,nombre))
                 {
                     item.Stock = item.Stock + Decimal.Parse(ingreso);
                     stockActualizado = item.Stock;
@@ -86,7 +90,7 @@ namespace PruebaSerializacionProyecto
             decimal valor = 0;
             foreach (var item in Combustibles)
             {
-                if (String.Equals(item.nombre, pal))
+                if (String.Equals(item.Nombre, pal))
                 {
                     valor = item.Precio;
                 }
@@ -103,12 +107,24 @@ namespace PruebaSerializacionProyecto
         {
             decimal precioActualizado = 0;
 
+            if (String.Equals(precioNuevo, ""))
+            {
+                precioNuevo = "0";
+            }
+
             foreach (var item in Combustibles)
             {
-                if (String.Equals(item.nombre, nombre))
+                if (String.Equals(item.Nombre, nombre))
                 {
-                    item.Precio = Decimal.Parse(precioNuevo);
-                    precioActualizado = item.Precio;
+                    if (Int32.Parse(precioNuevo) == 0)
+                    {
+                        return item.Precio;
+                    }
+                    else
+                    {
+                        item.Precio = Decimal.Parse(precioNuevo);
+                        precioActualizado = item.Precio;
+                    }
                 }
             }
 

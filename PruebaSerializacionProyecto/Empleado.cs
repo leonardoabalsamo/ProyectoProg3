@@ -9,8 +9,7 @@ namespace PruebaSerializacionProyecto
     [Serializable]
     public class Empleado
     {
-        public string nombre;
-
+        private string nombre;
         public Empleado(string nom)
         {
             nombre = nom;

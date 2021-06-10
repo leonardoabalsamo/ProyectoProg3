@@ -12,7 +12,7 @@ namespace PruebaSerializacionProyecto
 {
     public partial class Menu : Form
     {
-        public string label;
+        private string label;
         private Sistema empleados;
         private FormCarga frmCarga;
         private FormDescarga frmDescarga;
@@ -30,6 +30,8 @@ namespace PruebaSerializacionProyecto
             frmStock = new FormStock(empleados,this);
             InitializeComponent();
         }
+
+        public void setLabel(string lbl) { label = lbl; }
 
         private void Menu_Load(object sender, EventArgs e)
         {

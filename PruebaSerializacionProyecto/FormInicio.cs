@@ -12,7 +12,7 @@ namespace PruebaSerializacionProyecto
 {
     public partial class FormInicio : Form
     {
-        Sistema empleados;
+        private Sistema empleados;
         private Menu frmMenu;
         public FormInicio(Sistema s)
         {
@@ -31,7 +31,7 @@ namespace PruebaSerializacionProyecto
         private void button1_Click(object sender, EventArgs e)
         {
             string bienvenida = "Bienvenido" + " " + comboBox1.SelectedItem.ToString();
-            frmMenu.label = bienvenida;
+            frmMenu.setLabel(bienvenida);
             frmMenu.Show(); // Mostramos formulario Menu
             this.Hide(); // Ocultamos formulario1
         }
