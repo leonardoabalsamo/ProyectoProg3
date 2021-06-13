@@ -84,6 +84,16 @@ namespace PruebaSerializacionProyecto
                 
             return stockActualizado;
         }
+        public void descontarStock(string nombre, string ingreso)
+        {
+            foreach (var item in Combustibles)
+            {
+                if (String.Equals(item.Nombre, nombre))
+                {
+                    item.Stock = item.Stock - Decimal.Parse(ingreso);
+                }
+            }
+        }
 
         public decimal precioActual(string pal)
         {
@@ -130,5 +140,27 @@ namespace PruebaSerializacionProyecto
 
             return precioActualizado;
         }
+
+        /*Genero una venta desde el metodo publico*/
+        public void GeneraVenta(Venta venta)
+        {
+            Ventas.Add(venta);
+        }
+
+        /*Metodo recibe el nombre del empleado y devuelve la suma de ventas (pesos) */
+        public decimal ReportePesosEmpleado(string nombreEmpleado)
+        {
+            decimal suma=0;
+            foreach (var item in Ventas)
+            {
+                if (item.NombreEmpleado.Contains(nombreEmpleado))
+                {
+                    suma = suma + item.ValorPesos;
+                }
+            }
+            return suma;        // si suma vale cero el empleado no realizo ventas!
+        }
+
+
     }
 }
