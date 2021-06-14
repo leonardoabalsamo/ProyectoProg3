@@ -46,27 +46,23 @@ namespace PruebaSerializacionProyecto
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.RegresarMenu = new System.Windows.Forms.Button();
             this.VentaPesosUltra = new System.Windows.Forms.TextBox();
             this.VentaPesosPremium = new System.Windows.Forms.TextBox();
             this.VentaPesosDiesel = new System.Windows.Forms.TextBox();
             this.VentaPesosSuper = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.barraProgresoUltra = new System.Windows.Forms.ProgressBar();
-            this.barraProgresoPremium = new System.Windows.Forms.ProgressBar();
-            this.barraProgresoDiesel = new System.Windows.Forms.ProgressBar();
-            this.barraProgresoSuper = new System.Windows.Forms.ProgressBar();
+            this.btnSuper = new System.Windows.Forms.Button();
+            this.btnDiesel = new System.Windows.Forms.Button();
+            this.btnPremium = new System.Windows.Forms.Button();
+            this.btnUltra = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // PrecioUltra
             // 
             this.PrecioUltra.Enabled = false;
-            this.PrecioUltra.Location = new System.Drawing.Point(350, 226);
+            this.PrecioUltra.Location = new System.Drawing.Point(400, 224);
             this.PrecioUltra.Margin = new System.Windows.Forms.Padding(4);
             this.PrecioUltra.Name = "PrecioUltra";
             this.PrecioUltra.Size = new System.Drawing.Size(97, 22);
@@ -75,7 +71,7 @@ namespace PruebaSerializacionProyecto
             // PrecioPremium
             // 
             this.PrecioPremium.Enabled = false;
-            this.PrecioPremium.Location = new System.Drawing.Point(350, 174);
+            this.PrecioPremium.Location = new System.Drawing.Point(400, 172);
             this.PrecioPremium.Margin = new System.Windows.Forms.Padding(4);
             this.PrecioPremium.Name = "PrecioPremium";
             this.PrecioPremium.Size = new System.Drawing.Size(97, 22);
@@ -84,7 +80,7 @@ namespace PruebaSerializacionProyecto
             // PrecioDiesel
             // 
             this.PrecioDiesel.Enabled = false;
-            this.PrecioDiesel.Location = new System.Drawing.Point(350, 119);
+            this.PrecioDiesel.Location = new System.Drawing.Point(400, 117);
             this.PrecioDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.PrecioDiesel.Name = "PrecioDiesel";
             this.PrecioDiesel.Size = new System.Drawing.Size(97, 22);
@@ -93,7 +89,7 @@ namespace PruebaSerializacionProyecto
             // PrecioSuper
             // 
             this.PrecioSuper.Enabled = false;
-            this.PrecioSuper.Location = new System.Drawing.Point(350, 71);
+            this.PrecioSuper.Location = new System.Drawing.Point(400, 69);
             this.PrecioSuper.Margin = new System.Windows.Forms.Padding(4);
             this.PrecioSuper.Name = "PrecioSuper";
             this.PrecioSuper.Size = new System.Drawing.Size(97, 22);
@@ -102,7 +98,7 @@ namespace PruebaSerializacionProyecto
             // VentaLitrosUltra
             // 
             this.VentaLitrosUltra.Enabled = false;
-            this.VentaLitrosUltra.Location = new System.Drawing.Point(520, 226);
+            this.VentaLitrosUltra.Location = new System.Drawing.Point(570, 224);
             this.VentaLitrosUltra.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosUltra.Name = "VentaLitrosUltra";
             this.VentaLitrosUltra.Size = new System.Drawing.Size(97, 22);
@@ -111,7 +107,7 @@ namespace PruebaSerializacionProyecto
             // VentaLitrosPremium
             // 
             this.VentaLitrosPremium.Enabled = false;
-            this.VentaLitrosPremium.Location = new System.Drawing.Point(520, 174);
+            this.VentaLitrosPremium.Location = new System.Drawing.Point(570, 172);
             this.VentaLitrosPremium.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosPremium.Name = "VentaLitrosPremium";
             this.VentaLitrosPremium.Size = new System.Drawing.Size(97, 22);
@@ -120,7 +116,7 @@ namespace PruebaSerializacionProyecto
             // VentaLitrosDiesel
             // 
             this.VentaLitrosDiesel.Enabled = false;
-            this.VentaLitrosDiesel.Location = new System.Drawing.Point(520, 119);
+            this.VentaLitrosDiesel.Location = new System.Drawing.Point(570, 117);
             this.VentaLitrosDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosDiesel.Name = "VentaLitrosDiesel";
             this.VentaLitrosDiesel.Size = new System.Drawing.Size(97, 22);
@@ -128,7 +124,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(79, 279);
+            this.btnGuardar.Location = new System.Drawing.Point(23, 289);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(444, 42);
@@ -139,7 +135,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(825, 279);
+            this.btnCerrar.Location = new System.Drawing.Point(695, 289);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(152, 42);
@@ -151,7 +147,7 @@ namespace PruebaSerializacionProyecto
             // StockUltra
             // 
             this.StockUltra.Enabled = false;
-            this.StockUltra.Location = new System.Drawing.Point(186, 226);
+            this.StockUltra.Location = new System.Drawing.Point(260, 224);
             this.StockUltra.Margin = new System.Windows.Forms.Padding(4);
             this.StockUltra.Name = "StockUltra";
             this.StockUltra.Size = new System.Drawing.Size(97, 22);
@@ -160,7 +156,7 @@ namespace PruebaSerializacionProyecto
             // StockPremium
             // 
             this.StockPremium.Enabled = false;
-            this.StockPremium.Location = new System.Drawing.Point(186, 174);
+            this.StockPremium.Location = new System.Drawing.Point(260, 172);
             this.StockPremium.Margin = new System.Windows.Forms.Padding(4);
             this.StockPremium.Name = "StockPremium";
             this.StockPremium.Size = new System.Drawing.Size(97, 22);
@@ -169,7 +165,7 @@ namespace PruebaSerializacionProyecto
             // StockDiesel
             // 
             this.StockDiesel.Enabled = false;
-            this.StockDiesel.Location = new System.Drawing.Point(186, 119);
+            this.StockDiesel.Location = new System.Drawing.Point(260, 117);
             this.StockDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.StockDiesel.Name = "StockDiesel";
             this.StockDiesel.Size = new System.Drawing.Size(97, 22);
@@ -178,7 +174,7 @@ namespace PruebaSerializacionProyecto
             // VentaLitrosSuper
             // 
             this.VentaLitrosSuper.Enabled = false;
-            this.VentaLitrosSuper.Location = new System.Drawing.Point(520, 71);
+            this.VentaLitrosSuper.Location = new System.Drawing.Point(570, 69);
             this.VentaLitrosSuper.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosSuper.Name = "VentaLitrosSuper";
             this.VentaLitrosSuper.Size = new System.Drawing.Size(97, 22);
@@ -187,7 +183,7 @@ namespace PruebaSerializacionProyecto
             // StockSuper
             // 
             this.StockSuper.Enabled = false;
-            this.StockSuper.Location = new System.Drawing.Point(186, 71);
+            this.StockSuper.Location = new System.Drawing.Point(260, 69);
             this.StockSuper.Margin = new System.Windows.Forms.Padding(4);
             this.StockSuper.Name = "StockSuper";
             this.StockSuper.Size = new System.Drawing.Size(97, 22);
@@ -196,7 +192,7 @@ namespace PruebaSerializacionProyecto
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(356, 21);
+            this.label7.Location = new System.Drawing.Point(406, 19);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 17);
@@ -206,7 +202,7 @@ namespace PruebaSerializacionProyecto
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(532, 21);
+            this.label6.Location = new System.Drawing.Point(582, 19);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 17);
@@ -216,60 +212,16 @@ namespace PruebaSerializacionProyecto
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(194, 21);
+            this.label5.Location = new System.Drawing.Point(268, 19);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 17);
             this.label5.TabIndex = 30;
             this.label5.Text = "Stock Actual";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(54, 235);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 17);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Ultra Diesel";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(54, 182);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Premium";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(54, 128);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Diesel";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(54, 79);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Super";
-            // 
             // RegresarMenu
             // 
-            this.RegresarMenu.Location = new System.Drawing.Point(621, 279);
+            this.RegresarMenu.Location = new System.Drawing.Point(491, 289);
             this.RegresarMenu.Margin = new System.Windows.Forms.Padding(4);
             this.RegresarMenu.Name = "RegresarMenu";
             this.RegresarMenu.Size = new System.Drawing.Size(152, 42);
@@ -280,7 +232,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosUltra
             // 
-            this.VentaPesosUltra.Location = new System.Drawing.Point(701, 226);
+            this.VentaPesosUltra.Location = new System.Drawing.Point(751, 224);
             this.VentaPesosUltra.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosUltra.Name = "VentaPesosUltra";
             this.VentaPesosUltra.Size = new System.Drawing.Size(97, 22);
@@ -288,7 +240,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosPremium
             // 
-            this.VentaPesosPremium.Location = new System.Drawing.Point(701, 174);
+            this.VentaPesosPremium.Location = new System.Drawing.Point(751, 172);
             this.VentaPesosPremium.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosPremium.Name = "VentaPesosPremium";
             this.VentaPesosPremium.Size = new System.Drawing.Size(97, 22);
@@ -296,7 +248,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosDiesel
             // 
-            this.VentaPesosDiesel.Location = new System.Drawing.Point(701, 119);
+            this.VentaPesosDiesel.Location = new System.Drawing.Point(751, 117);
             this.VentaPesosDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosDiesel.Name = "VentaPesosDiesel";
             this.VentaPesosDiesel.Size = new System.Drawing.Size(97, 22);
@@ -304,7 +256,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosSuper
             // 
-            this.VentaPesosSuper.Location = new System.Drawing.Point(701, 71);
+            this.VentaPesosSuper.Location = new System.Drawing.Point(751, 69);
             this.VentaPesosSuper.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosSuper.Name = "VentaPesosSuper";
             this.VentaPesosSuper.Size = new System.Drawing.Size(97, 22);
@@ -313,78 +265,77 @@ namespace PruebaSerializacionProyecto
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(698, 21);
+            this.label8.Location = new System.Drawing.Point(748, 19);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 17);
             this.label8.TabIndex = 53;
             this.label8.Text = "Venta (Pesos)";
             // 
-            // label10
+            // btnSuper
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(833, 20);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(156, 22);
-            this.label10.TabIndex = 58;
-            this.label10.Text = "0 lts <--> 10000 lts";
+            this.btnSuper.Location = new System.Drawing.Point(26, 61);
+            this.btnSuper.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSuper.Name = "btnSuper";
+            this.btnSuper.Size = new System.Drawing.Size(152, 42);
+            this.btnSuper.TabIndex = 59;
+            this.btnSuper.Text = "SUPER";
+            this.btnSuper.UseVisualStyleBackColor = true;
+            this.btnSuper.Click += new System.EventHandler(this.btnSuper_Click);
             // 
-            // barraProgresoUltra
+            // btnDiesel
             // 
-            this.barraProgresoUltra.Location = new System.Drawing.Point(846, 226);
-            this.barraProgresoUltra.Margin = new System.Windows.Forms.Padding(4);
-            this.barraProgresoUltra.Maximum = 10000;
-            this.barraProgresoUltra.Name = "barraProgresoUltra";
-            this.barraProgresoUltra.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.barraProgresoUltra.Size = new System.Drawing.Size(122, 22);
-            this.barraProgresoUltra.Step = 1;
-            this.barraProgresoUltra.TabIndex = 57;
+            this.btnDiesel.Location = new System.Drawing.Point(26, 111);
+            this.btnDiesel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDiesel.Name = "btnDiesel";
+            this.btnDiesel.Size = new System.Drawing.Size(152, 42);
+            this.btnDiesel.TabIndex = 60;
+            this.btnDiesel.Text = "DIESEL";
+            this.btnDiesel.UseVisualStyleBackColor = true;
+            this.btnDiesel.Click += new System.EventHandler(this.btnDiesel_Click);
             // 
-            // barraProgresoPremium
+            // btnPremium
             // 
-            this.barraProgresoPremium.Location = new System.Drawing.Point(846, 174);
-            this.barraProgresoPremium.Margin = new System.Windows.Forms.Padding(4);
-            this.barraProgresoPremium.Maximum = 10000;
-            this.barraProgresoPremium.Name = "barraProgresoPremium";
-            this.barraProgresoPremium.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.barraProgresoPremium.Size = new System.Drawing.Size(122, 22);
-            this.barraProgresoPremium.Step = 1;
-            this.barraProgresoPremium.TabIndex = 56;
+            this.btnPremium.Location = new System.Drawing.Point(26, 164);
+            this.btnPremium.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPremium.Name = "btnPremium";
+            this.btnPremium.Size = new System.Drawing.Size(152, 42);
+            this.btnPremium.TabIndex = 61;
+            this.btnPremium.Text = "PREMIUM";
+            this.btnPremium.UseVisualStyleBackColor = true;
+            this.btnPremium.Click += new System.EventHandler(this.btnPremium_Click);
             // 
-            // barraProgresoDiesel
+            // btnUltra
             // 
-            this.barraProgresoDiesel.Location = new System.Drawing.Point(846, 119);
-            this.barraProgresoDiesel.Margin = new System.Windows.Forms.Padding(4);
-            this.barraProgresoDiesel.Maximum = 10000;
-            this.barraProgresoDiesel.Name = "barraProgresoDiesel";
-            this.barraProgresoDiesel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.barraProgresoDiesel.Size = new System.Drawing.Size(122, 22);
-            this.barraProgresoDiesel.Step = 1;
-            this.barraProgresoDiesel.TabIndex = 55;
+            this.btnUltra.Location = new System.Drawing.Point(26, 214);
+            this.btnUltra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUltra.Name = "btnUltra";
+            this.btnUltra.Size = new System.Drawing.Size(152, 42);
+            this.btnUltra.TabIndex = 62;
+            this.btnUltra.Text = "ULTRA DIESEL";
+            this.btnUltra.UseVisualStyleBackColor = true;
+            this.btnUltra.Click += new System.EventHandler(this.btnUltra_Click);
             // 
-            // barraProgresoSuper
+            // label9
             // 
-            this.barraProgresoSuper.Location = new System.Drawing.Point(846, 71);
-            this.barraProgresoSuper.Margin = new System.Windows.Forms.Padding(4);
-            this.barraProgresoSuper.Maximum = 10000;
-            this.barraProgresoSuper.Name = "barraProgresoSuper";
-            this.barraProgresoSuper.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.barraProgresoSuper.Size = new System.Drawing.Size(122, 22);
-            this.barraProgresoSuper.Step = 1;
-            this.barraProgresoSuper.TabIndex = 54;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(13, 21);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(162, 17);
+            this.label9.TabIndex = 63;
+            this.label9.Text = "Seleccione Combustible:";
             // 
             // FormDescarga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 347);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.barraProgresoUltra);
-            this.Controls.Add(this.barraProgresoPremium);
-            this.Controls.Add(this.barraProgresoDiesel);
-            this.Controls.Add(this.barraProgresoSuper);
+            this.ClientSize = new System.Drawing.Size(882, 369);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnUltra);
+            this.Controls.Add(this.btnPremium);
+            this.Controls.Add(this.btnDiesel);
+            this.Controls.Add(this.btnSuper);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.VentaPesosUltra);
             this.Controls.Add(this.VentaPesosPremium);
@@ -408,12 +359,8 @@ namespace PruebaSerializacionProyecto
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "FormDescarga";
-            this.Text = "FormDescarga";
+            this.Text = "DESCARGA DE COMBUSTIBLE";
             this.Load += new System.EventHandler(this.FormDescarga_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -438,20 +385,16 @@ namespace PruebaSerializacionProyecto
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RegresarMenu;
         private System.Windows.Forms.TextBox VentaPesosUltra;
         private System.Windows.Forms.TextBox VentaPesosPremium;
         private System.Windows.Forms.TextBox VentaPesosDiesel;
         private System.Windows.Forms.TextBox VentaPesosSuper;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ProgressBar barraProgresoUltra;
-        private System.Windows.Forms.ProgressBar barraProgresoPremium;
-        private System.Windows.Forms.ProgressBar barraProgresoDiesel;
-        private System.Windows.Forms.ProgressBar barraProgresoSuper;
+        private System.Windows.Forms.Button btnSuper;
+        private System.Windows.Forms.Button btnDiesel;
+        private System.Windows.Forms.Button btnPremium;
+        private System.Windows.Forms.Button btnUltra;
+        private System.Windows.Forms.Label label9;
     }
 }

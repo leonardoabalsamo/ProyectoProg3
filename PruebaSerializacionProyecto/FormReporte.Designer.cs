@@ -34,11 +34,12 @@ namespace PruebaSerializacionProyecto
             this.label2 = new System.Windows.Forms.Label();
             this.Seleccionar = new System.Windows.Forms.Button();
             this.ComboBoxEmpleados = new System.Windows.Forms.ComboBox();
+            this.listReporte = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Regresar
             // 
-            this.Regresar.Location = new System.Drawing.Point(503, 395);
+            this.Regresar.Location = new System.Drawing.Point(38, 395);
             this.Regresar.Margin = new System.Windows.Forms.Padding(4);
             this.Regresar.Name = "Regresar";
             this.Regresar.Size = new System.Drawing.Size(108, 42);
@@ -49,7 +50,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(665, 395);
+            this.btnCerrar.Location = new System.Drawing.Point(187, 395);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(108, 42);
@@ -63,7 +64,7 @@ namespace PruebaSerializacionProyecto
             this.label2.AccessibleName = "";
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(28, 31);
+            this.label2.Location = new System.Drawing.Point(12, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(320, 17);
             this.label2.TabIndex = 33;
@@ -87,11 +88,21 @@ namespace PruebaSerializacionProyecto
             this.ComboBoxEmpleados.Size = new System.Drawing.Size(257, 24);
             this.ComboBoxEmpleados.TabIndex = 30;
             // 
+            // listReporte
+            // 
+            this.listReporte.FormattingEnabled = true;
+            this.listReporte.ItemHeight = 16;
+            this.listReporte.Location = new System.Drawing.Point(38, 184);
+            this.listReporte.Name = "listReporte";
+            this.listReporte.Size = new System.Drawing.Size(257, 196);
+            this.listReporte.TabIndex = 34;
+            // 
             // FormReporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(343, 468);
+            this.Controls.Add(this.listReporte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seleccionar);
             this.Controls.Add(this.ComboBoxEmpleados);
@@ -112,5 +123,6 @@ namespace PruebaSerializacionProyecto
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Seleccionar;
         private System.Windows.Forms.ComboBox ComboBoxEmpleados;
+        private System.Windows.Forms.ListBox listReporte;
     }
 }

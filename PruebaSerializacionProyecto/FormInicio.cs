@@ -32,6 +32,7 @@ namespace PruebaSerializacionProyecto
         {
             string bienvenida = "Bienvenido" + " " + comboBox1.SelectedItem.ToString();
             frmMenu.setLabel(bienvenida);
+            frmMenu.setEmpleadoSeleccionado(comboBox1.SelectedItem.ToString());
             frmMenu.Show(); // Mostramos formulario Menu
             this.Hide(); // Ocultamos formulario1
         }

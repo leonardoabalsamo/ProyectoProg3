@@ -38,14 +38,12 @@ namespace PruebaSerializacionProyecto
             ComboBoxEmpleados.SelectedIndex = 0;
         }
 
-        // Genera un reporte de ventas del empleado
+        // Genera un reporte de ventas del empleado, VER MAÑANA
         private void Seleccionar_Click(object sender, EventArgs e)
         {
-            string NombreEmpleado; decimal Suma = 0;
-            //NombreEmpleado = (Empleado)ComboBoxEmpleados.SelectedValue;
-
-            //Suma = empleados.ReportePesosEmpleado(NombreEmpleado);
-
+            listReporte.DataSource = empleados.ListaVentas();
+                
+                /*empleados.MuestraVenta(ComboBoxEmpleados.SelectedItem.ToString());*/
         }
     }
 }
