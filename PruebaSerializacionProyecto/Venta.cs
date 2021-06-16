@@ -24,7 +24,7 @@ namespace PruebaSerializacionProyecto
 
 
         public string NombreEmpleado { get { return nombreEmpleado; } set { nombreEmpleado = value; } }
-        public string TipoCombustible { get { return TipoCombustible; } set { tipoCombustible = value; } }
+        public string TipoCombustible { get { return tipoCombustible; } set { tipoCombustible = value; } }
         public decimal ValorPesos { get { return valorPesos; } set { valorPesos = value; } }
         public decimal CantidadLitros { get { return cantidadLitros; } set { cantidadLitros = value; } }
 

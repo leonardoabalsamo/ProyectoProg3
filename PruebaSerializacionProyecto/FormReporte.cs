@@ -37,10 +37,6 @@ namespace PruebaSerializacionProyecto
         {
             ComboBoxEmpleados.Items.AddRange(empleados.cargaEmpleado().ToArray());
             ComboBoxEmpleados.SelectedIndex = 0;
-            foreach (var item in empleados.ListaVentas())
-            {
-                textBox1.Text = item.TipoCombustible;
-            }
         }
 
         // Genera un reporte de ventas del empleado, VER MAÑANA
@@ -48,7 +44,7 @@ namespace PruebaSerializacionProyecto
         {
             foreach (var item in empleados.ListaVentas())
             {
-                listReporte.Items.Add(item.ToString());
+                listReporte.Items.Add(item);
             }
         }
     }

@@ -73,7 +73,7 @@ namespace PruebaSerializacionProyecto
             // Seleccionar
             // 
             this.Seleccionar.Location = new System.Drawing.Point(144, 102);
-            this.Seleccionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Seleccionar.Margin = new System.Windows.Forms.Padding(2);
             this.Seleccionar.Name = "Seleccionar";
             this.Seleccionar.Size = new System.Drawing.Size(193, 28);
             this.Seleccionar.TabIndex = 31;
@@ -85,7 +85,7 @@ namespace PruebaSerializacionProyecto
             // 
             this.ComboBoxEmpleados.FormattingEnabled = true;
             this.ComboBoxEmpleados.Location = new System.Drawing.Point(144, 65);
-            this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxEmpleados.Name = "ComboBoxEmpleados";
             this.ComboBoxEmpleados.Size = new System.Drawing.Size(194, 21);
             this.ComboBoxEmpleados.TabIndex = 30;
@@ -94,7 +94,7 @@ namespace PruebaSerializacionProyecto
             // 
             this.listReporte.FormattingEnabled = true;
             this.listReporte.Location = new System.Drawing.Point(28, 150);
-            this.listReporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listReporte.Margin = new System.Windows.Forms.Padding(2);
             this.listReporte.Name = "listReporte";
             this.listReporte.Size = new System.Drawing.Size(419, 160);
             this.listReporte.TabIndex = 34;
@@ -110,7 +110,7 @@ namespace PruebaSerializacionProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 384);
+            this.ClientSize = new System.Drawing.Size(535, 406);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listReporte);
             this.Controls.Add(this.label2);
@@ -118,7 +118,7 @@ namespace PruebaSerializacionProyecto
             this.Controls.Add(this.ComboBoxEmpleados);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnCerrar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormReporte";
             this.Text = "FormReporte";
             this.Load += new System.EventHandler(this.FormReporte_Load);
