@@ -361,6 +361,7 @@ namespace PruebaSerializacionProyecto
             this.Controls.Add(this.label5);
             this.Name = "FormDescarga";
             this.Text = "DESCARGA DE COMBUSTIBLE";
+            this.Activated += new System.EventHandler(this.FormDescarga_Activated);
             this.Load += new System.EventHandler(this.FormDescarga_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

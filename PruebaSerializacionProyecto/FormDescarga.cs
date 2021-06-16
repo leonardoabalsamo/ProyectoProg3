@@ -214,5 +214,19 @@ namespace PruebaSerializacionProyecto
             this.Hide();
         }
 
+        private void FormDescarga_Activated(object sender, EventArgs e)
+        {
+            /*Inicializo Precio consultando al método precioActual*/
+            PrecioSuper.Text = empleados.precioActual("Super").ToString();
+            PrecioDiesel.Text = empleados.precioActual("Diesel").ToString();
+            PrecioPremium.Text = empleados.precioActual("Premium").ToString();
+            PrecioUltra.Text = empleados.precioActual("Ultra Diesel").ToString();
+
+            /*Inicializo Stock consultando al método stockActual*/
+            StockSuper.Text = empleados.stockActual("Super").ToString();
+            StockDiesel.Text = empleados.stockActual("Diesel").ToString();
+            StockPremium.Text = empleados.stockActual("Premium").ToString();
+            StockUltra.Text = empleados.stockActual("Ultra Diesel").ToString();
+        }
     }
 }
