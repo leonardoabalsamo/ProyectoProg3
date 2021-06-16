@@ -16,8 +16,6 @@ namespace PruebaSerializacionProyecto
         private Sistema empleados;
         private string EmpleadoSeleccionado;
 
-
-
         public FormDescarga(Sistema emp , Form menu , string empleadoSeleccionado)
         {
             frmMenu = (Menu)menu;
@@ -74,7 +72,7 @@ namespace PruebaSerializacionProyecto
                 empleados.descontarStock("Super", VentaLitrosSuper.Text);
                 VentaPesosSuper.Text = 0.ToString();
                 Venta Super = new Venta(EmpleadoSeleccionado, "Super", Decimal.Parse(VentaPesosSuper.Text), Decimal.Parse(VentaLitrosSuper.Text));
-
+                empleados.CargarVenta(Super);
             }
 
             /* 
@@ -89,6 +87,7 @@ namespace PruebaSerializacionProyecto
                 empleados.descontarStock("Diesel", VentaLitrosDiesel.Text);
                 VentaPesosDiesel.Text = 0.ToString();
                 Venta Diesel = new Venta(EmpleadoSeleccionado, "Diesel", Decimal.Parse(VentaPesosDiesel.Text), Decimal.Parse(VentaLitrosDiesel.Text));
+                empleados.CargarVenta(Diesel);
             }
 
             if (VentaPesosPremium.Text != null)
@@ -97,6 +96,7 @@ namespace PruebaSerializacionProyecto
                 empleados.descontarStock("Premium", VentaLitrosPremium.Text);
                 VentaPesosPremium.Text = 0.ToString();
                 Venta Premium = new Venta(EmpleadoSeleccionado, "Premium", Decimal.Parse(VentaPesosPremium.Text), Decimal.Parse(VentaLitrosPremium.Text));
+                empleados.CargarVenta(Premium);
             }
 
             if (VentaPesosUltra.Text != null)
@@ -105,6 +105,7 @@ namespace PruebaSerializacionProyecto
                 empleados.descontarStock("Ultra Diesel", VentaLitrosUltra.Text);
                 VentaPesosUltra.Text = 0.ToString();
                 Venta Ultra = new Venta(EmpleadoSeleccionado, "Ultra Diesel", Decimal.Parse(VentaPesosUltra.Text), Decimal.Parse(VentaLitrosUltra.Text));
+                empleados.CargarVenta(Ultra);
             }
 
 

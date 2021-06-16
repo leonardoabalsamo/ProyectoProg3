@@ -142,7 +142,7 @@ namespace PruebaSerializacionProyecto
         }
 
         /*Genero una venta desde el metodo publico*/
-        public void GeneraVenta(Venta venta)
+        public void CargarVenta(Venta venta)
         {
             Ventas.Add(venta);
         }
@@ -162,7 +162,10 @@ namespace PruebaSerializacionProyecto
             return cadena;
         }
 
-        public List<Venta> ListaVentas() { return Ventas; }
+        public List<Venta> ListaVentas() 
+        {
+            return Ventas;
+        }
         
         /*Metodo recibe el nombre del empleado y devuelve la suma de ventas (pesos) */
         public decimal ReportePesosEmpleado(string nombreEmpleado)

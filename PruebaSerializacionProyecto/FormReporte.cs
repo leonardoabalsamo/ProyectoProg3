@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,14 +37,19 @@ namespace PruebaSerializacionProyecto
         {
             ComboBoxEmpleados.Items.AddRange(empleados.cargaEmpleado().ToArray());
             ComboBoxEmpleados.SelectedIndex = 0;
+            foreach (var item in empleados.ListaVentas())
+            {
+                textBox1.Text = item.TipoCombustible;
+            }
         }
 
         // Genera un reporte de ventas del empleado, VER MAÑANA
         private void Seleccionar_Click(object sender, EventArgs e)
         {
-            listReporte.DataSource = empleados.ListaVentas();
-                
-                /*empleados.MuestraVenta(ComboBoxEmpleados.SelectedItem.ToString());*/
+            foreach (var item in empleados.ListaVentas())
+            {
+                listReporte.Items.Add(item.ToString());
+            }
         }
     }
 }
