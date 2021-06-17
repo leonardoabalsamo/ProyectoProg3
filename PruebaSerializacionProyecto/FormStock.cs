@@ -35,7 +35,7 @@ namespace PruebaSerializacionProyecto
         private void FormStock_Load(object sender, EventArgs e)
         {
             stockSuperActual.Text = empleado.stockActual("Super").ToString();
-            barraProgresoSuper.Value = Int32.Parse(empleado.stockActual("Super").ToString());
+            barraProgresoSuper.Value = (Int32.Parse(stockSuperActual.Text)); //REDONDEO toint y Limite 10mil litros.
 
             stockDieselActual.Text = empleado.stockActual("Diesel").ToString();
             barraProgresoDiesel.Value = Int32.Parse(empleado.stockActual("Diesel").ToString());

@@ -64,48 +64,45 @@ namespace PruebaSerializacionProyecto
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            /*GENERO UNA VENTA*/ // FALTA TRAER EL NOMBRE DEL EMPLEADO!!!
             
-            if (VentaPesosSuper.Text != null)
+            if (VentaPesosSuper.Text != 0.ToString())
             {
                 VentaLitrosSuper.Text = (Decimal.Parse(VentaPesosSuper.Text) / Decimal.Parse(PrecioSuper.Text)).ToString();
                 empleados.descontarStock("Super", VentaLitrosSuper.Text);
-                VentaPesosSuper.Text = 0.ToString();
                 Venta Super = new Venta(EmpleadoSeleccionado, "Super", Decimal.Parse(VentaPesosSuper.Text), Decimal.Parse(VentaLitrosSuper.Text));
                 empleados.CargarVenta(Super);
+                VentaPesosSuper.Text = 0.ToString();
+
             }
 
-            /* 
-             Venta Pepito = new Venta(parametros);
-             empleado.GeneraVenta(Pepito);
-             Pasar ademas la cantidad de litros para hacer reporte
-            */
 
-            if (VentaPesosDiesel.Text != null)
+            if (VentaPesosDiesel.Text != 0.ToString())
             {
                 VentaLitrosDiesel.Text = (Decimal.Parse(VentaPesosDiesel.Text) / Decimal.Parse(PrecioDiesel.Text)).ToString();
                 empleados.descontarStock("Diesel", VentaLitrosDiesel.Text);
-                VentaPesosDiesel.Text = 0.ToString();
                 Venta Diesel = new Venta(EmpleadoSeleccionado, "Diesel", Decimal.Parse(VentaPesosDiesel.Text), Decimal.Parse(VentaLitrosDiesel.Text));
                 empleados.CargarVenta(Diesel);
+                VentaPesosDiesel.Text = 0.ToString();
+
             }
 
-            if (VentaPesosPremium.Text != null)
+            if (VentaPesosPremium.Text != 0.ToString())
             {
                 VentaLitrosPremium.Text = (Decimal.Parse(VentaPesosPremium.Text) / Decimal.Parse(PrecioPremium.Text)).ToString();
                 empleados.descontarStock("Premium", VentaLitrosPremium.Text);
-                VentaPesosPremium.Text = 0.ToString();
                 Venta Premium = new Venta(EmpleadoSeleccionado, "Premium", Decimal.Parse(VentaPesosPremium.Text), Decimal.Parse(VentaLitrosPremium.Text));
                 empleados.CargarVenta(Premium);
+                VentaPesosPremium.Text = 0.ToString();
+
             }
 
-            if (VentaPesosUltra.Text != null)
+            if (VentaPesosUltra.Text != 0.ToString())
             {
                 VentaLitrosUltra.Text = (Decimal.Parse(VentaPesosUltra.Text) / Decimal.Parse(PrecioUltra.Text)).ToString();
                 empleados.descontarStock("Ultra Diesel", VentaLitrosUltra.Text);
-                VentaPesosUltra.Text = 0.ToString();
                 Venta Ultra = new Venta(EmpleadoSeleccionado, "Ultra Diesel", Decimal.Parse(VentaPesosUltra.Text), Decimal.Parse(VentaLitrosUltra.Text));
                 empleados.CargarVenta(Ultra);
+                VentaPesosUltra.Text = 0.ToString();
             }
 
 

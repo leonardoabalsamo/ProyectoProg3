@@ -31,21 +31,19 @@ namespace PruebaSerializacionProyecto
         {
             frmMenu.Show();
             this.Hide();
+            listReporte.Items.Clear();
+
         }
 
         private void FormReporte_Load(object sender, EventArgs e)
         {
             ComboBoxEmpleados.Items.AddRange(empleados.cargaEmpleado().ToArray());
-            ComboBoxEmpleados.SelectedIndex = 0;
-            foreach (var item in empleados.ListaVentas())
-            {
-                textBox1.Text = item.TipoCombustible;
-            }
+            ComboBoxEmpleados.SelectedIndex = 0;            
         }
 
-        // Genera un reporte de ventas del empleado, VER MAÑANA
         private void Seleccionar_Click(object sender, EventArgs e)
         {
+            listReporte.Items.Clear();
             foreach (var item in empleados.ListaVentas())
             {
                 listReporte.Items.Add(item.ToString());
