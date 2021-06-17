@@ -38,7 +38,11 @@ namespace PruebaSerializacionProyecto
         private void FormReporte_Load(object sender, EventArgs e)
         {
             ComboBoxEmpleados.Items.AddRange(empleados.cargaEmpleado().ToArray());
+<<<<<<< HEAD
             ComboBoxEmpleados.SelectedIndex = 0;            
+=======
+            ComboBoxEmpleados.SelectedIndex = 0;
+>>>>>>> 1b4dbc430dd4abba99e00e522185e4e4f8013316
         }
 
         private void Seleccionar_Click(object sender, EventArgs e)
@@ -46,7 +50,7 @@ namespace PruebaSerializacionProyecto
             listReporte.Items.Clear();
             foreach (var item in empleados.ListaVentas())
             {
-                listReporte.Items.Add(item.ToString());
+                listReporte.Items.Add(item);
             }
         }
     }

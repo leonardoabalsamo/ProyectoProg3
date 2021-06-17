@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -162,9 +163,19 @@ namespace PruebaSerializacionProyecto
             return cadena;
         }
 
-        public List<Venta> ListaVentas() 
+        public List<string> ListaVentas() 
         {
-            return Ventas;
+            List<string> lVentas = new List<string>();
+            string frase = null;
+
+            foreach (var item in Ventas)
+            {
+                frase = String.Concat(item.NombreEmpleado," ",item.TipoCombustible, " ", item.ValorPesos.ToString(), " " , item.CantidadLitros.ToString());
+                lVentas.Add(frase);
+                frase = null;
+            }
+
+            return lVentas;
         }
         
         /*Metodo recibe el nombre del empleado y devuelve la suma de ventas (pesos) */
