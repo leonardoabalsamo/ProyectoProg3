@@ -17,6 +17,8 @@ namespace PruebaSerializacionProyecto
         private Sistema empleados;
         private Menu frmMenu;
 
+        public object MsgBox { get; private set; }
+
         public FormCarga(Sistema emp , Form Menu)
         {
             empleados = emp;
@@ -56,19 +58,36 @@ namespace PruebaSerializacionProyecto
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            int maxValue = 10000;
             /*Actualizo Stock y coloco inputs en null*/
+            //Super
             if (IngresoSuper.Text == null) { stockSuper.Text = empleados.actualizarStock("Super", "0").ToString(); }
-            else { stockSuper.Text = empleados.actualizarStock("Super", IngresoSuper.Text).ToString(); }
-
+            else if ( (Decimal.Parse(stockSuper.Text) + Decimal.Parse(IngresoSuper.Text)) <= maxValue ){ 
+                stockSuper.Text = empleados.actualizarStock("Super", IngresoSuper.Text).ToString();
+            }
+            else { MessageBox.Show("No se puede cargar combustible por sobre el valor maximo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }              
+            //Diesel
             if (IngresoDiesel.Text == null) { StockDiesel.Text = empleados.actualizarStock("Diesel", "0").ToString(); }
-            else { StockDiesel.Text = empleados.actualizarStock("Diesel", IngresoDiesel.Text).ToString(); }
-
+            else if ((Decimal.Parse(StockDiesel.Text) + Decimal.Parse(IngresoDiesel.Text)) <= maxValue)
+            {
+                StockDiesel.Text = empleados.actualizarStock("Diesel", IngresoDiesel.Text).ToString();
+            }
+            else { MessageBox.Show("No se puede cargar combustible por sobre el valor maximo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            //Premium
             if (IngresoPremium == null) { StockPremium.Text = empleados.actualizarStock("Premium", "0").ToString(); }
-            else { StockPremium.Text = empleados.actualizarStock("Premium", IngresoPremium.Text).ToString(); }
-
+            else if ((Decimal.Parse(StockPremium.Text) + Decimal.Parse(IngresoPremium.Text)) <= maxValue)
+            {
+                StockPremium.Text = empleados.actualizarStock("Premium", IngresoPremium.Text).ToString();
+            }
+            else { MessageBox.Show("No se puede cargar combustible por sobre el valor maximo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            //Ultra Diesel
             if (IngresoUltra == null) { StockUltra.Text = empleados.actualizarStock("Ultra Diesel", "0").ToString(); }
-            else { StockUltra.Text = empleados.actualizarStock("Ultra Diesel", IngresoUltra.Text).ToString(); }
-            
+            else if ((Decimal.Parse(StockUltra.Text) + Decimal.Parse(IngresoUltra.Text)) <= maxValue)
+            {
+                StockUltra.Text = empleados.actualizarStock("Ultra Diesel", IngresoUltra.Text).ToString();
+            }
+            else { MessageBox.Show("No se puede cargar combustible por sobre el valor maximo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
             IngresoSuper.Text = null;
             IngresoDiesel.Text = null;
             IngresoPremium.Text = null;

@@ -76,13 +76,10 @@ namespace PruebaSerializacionProyecto
             // 
             // Seleccionar
             // 
-<<<<<<< HEAD
             this.Seleccionar.Location = new System.Drawing.Point(192, 126);
             this.Seleccionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.Seleccionar.Location = new System.Drawing.Point(144, 102);
             this.Seleccionar.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 1b4dbc430dd4abba99e00e522185e4e4f8013316
             this.Seleccionar.Name = "Seleccionar";
             this.Seleccionar.Size = new System.Drawing.Size(257, 34);
             this.Seleccionar.TabIndex = 31;
@@ -93,13 +90,10 @@ namespace PruebaSerializacionProyecto
             // ComboBoxEmpleados
             // 
             this.ComboBoxEmpleados.FormattingEnabled = true;
-<<<<<<< HEAD
             this.ComboBoxEmpleados.Location = new System.Drawing.Point(192, 80);
             this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.ComboBoxEmpleados.Location = new System.Drawing.Point(144, 65);
             this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 1b4dbc430dd4abba99e00e522185e4e4f8013316
             this.ComboBoxEmpleados.Name = "ComboBoxEmpleados";
             this.ComboBoxEmpleados.Size = new System.Drawing.Size(257, 24);
             this.ComboBoxEmpleados.TabIndex = 30;
@@ -107,14 +101,11 @@ namespace PruebaSerializacionProyecto
             // listReporte
             // 
             this.listReporte.FormattingEnabled = true;
-<<<<<<< HEAD
             this.listReporte.ItemHeight = 16;
             this.listReporte.Location = new System.Drawing.Point(53, 204);
             this.listReporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.listReporte.Location = new System.Drawing.Point(28, 150);
             this.listReporte.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 1b4dbc430dd4abba99e00e522185e4e4f8013316
             this.listReporte.Name = "listReporte";
             this.listReporte.Size = new System.Drawing.Size(557, 196);
             this.listReporte.TabIndex = 34;
@@ -167,27 +158,20 @@ namespace PruebaSerializacionProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(665, 473);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-=======
             this.ClientSize = new System.Drawing.Size(535, 406);
-            this.Controls.Add(this.textBox1);
->>>>>>> 1b4dbc430dd4abba99e00e522185e4e4f8013316
             this.Controls.Add(this.listReporte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seleccionar);
             this.Controls.Add(this.ComboBoxEmpleados);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnCerrar);
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> 1b4dbc430dd4abba99e00e522185e4e4f8013316
             this.Name = "FormReporte";
             this.Text = "FormReporte";
             this.Load += new System.EventHandler(this.FormReporte_Load);
