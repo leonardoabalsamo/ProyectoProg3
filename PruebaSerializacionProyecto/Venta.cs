@@ -24,7 +24,7 @@ namespace PruebaSerializacionProyecto
 
         public override string ToString() {
             string aux;
-            aux = (nombreEmpleado + "                      " + cantidadLitros.ToString() + "                      " + tipoCombustible + "                      " + valorPesos.ToString()) + "\n";
+            aux = nombreEmpleado + "                  " + tipoCombustible + "                  " + valorPesos.ToString() + "                  " + cantidadLitros.ToString();
             return aux;
         }
 

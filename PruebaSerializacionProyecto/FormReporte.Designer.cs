@@ -43,10 +43,9 @@ namespace PruebaSerializacionProyecto
             // 
             // Regresar
             // 
-            this.Regresar.Location = new System.Drawing.Point(192, 416);
-            this.Regresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Regresar.Location = new System.Drawing.Point(144, 338);
             this.Regresar.Name = "Regresar";
-            this.Regresar.Size = new System.Drawing.Size(108, 42);
+            this.Regresar.Size = new System.Drawing.Size(81, 34);
             this.Regresar.TabIndex = 29;
             this.Regresar.Text = "Regresar";
             this.Regresar.UseVisualStyleBackColor = true;
@@ -54,10 +53,9 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(341, 416);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Location = new System.Drawing.Point(256, 338);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(108, 42);
+            this.btnCerrar.Size = new System.Drawing.Size(81, 34);
             this.btnCerrar.TabIndex = 28;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -68,20 +66,19 @@ namespace PruebaSerializacionProyecto
             this.label2.AccessibleName = "";
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(167, 30);
+            this.label2.Location = new System.Drawing.Point(125, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(320, 17);
+            this.label2.Size = new System.Drawing.Size(239, 13);
             this.label2.TabIndex = 33;
             this.label2.Text = "Seleccione el Empleado para generar el Reporte:";
             // 
             // Seleccionar
             // 
-            this.Seleccionar.Location = new System.Drawing.Point(192, 126);
-            this.Seleccionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Seleccionar.Location = new System.Drawing.Point(144, 102);
+            this.Seleccionar.Location = new System.Drawing.Point(108, 83);
             this.Seleccionar.Margin = new System.Windows.Forms.Padding(2);
             this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.Size = new System.Drawing.Size(257, 34);
+            this.Seleccionar.Size = new System.Drawing.Size(193, 28);
             this.Seleccionar.TabIndex = 31;
             this.Seleccionar.Text = "Seleccionar";
             this.Seleccionar.UseVisualStyleBackColor = true;
@@ -90,24 +87,19 @@ namespace PruebaSerializacionProyecto
             // ComboBoxEmpleados
             // 
             this.ComboBoxEmpleados.FormattingEnabled = true;
-            this.ComboBoxEmpleados.Location = new System.Drawing.Point(192, 80);
-            this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxEmpleados.Location = new System.Drawing.Point(144, 65);
+            this.ComboBoxEmpleados.Location = new System.Drawing.Point(108, 53);
             this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxEmpleados.Name = "ComboBoxEmpleados";
-            this.ComboBoxEmpleados.Size = new System.Drawing.Size(257, 24);
+            this.ComboBoxEmpleados.Size = new System.Drawing.Size(194, 21);
             this.ComboBoxEmpleados.TabIndex = 30;
             // 
             // listReporte
             // 
             this.listReporte.FormattingEnabled = true;
-            this.listReporte.ItemHeight = 16;
-            this.listReporte.Location = new System.Drawing.Point(53, 204);
-            this.listReporte.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listReporte.Location = new System.Drawing.Point(28, 150);
+            this.listReporte.Location = new System.Drawing.Point(50, 144);
             this.listReporte.Margin = new System.Windows.Forms.Padding(2);
             this.listReporte.Name = "listReporte";
-            this.listReporte.Size = new System.Drawing.Size(557, 196);
+            this.listReporte.Size = new System.Drawing.Size(615, 160);
             this.listReporte.TabIndex = 34;
             // 
             // label1
@@ -115,9 +107,10 @@ namespace PruebaSerializacionProyecto
             this.label1.AccessibleName = "";
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Location = new System.Drawing.Point(50, 172);
+            this.label1.Location = new System.Drawing.Point(59, 129);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 17);
+            this.label1.Size = new System.Drawing.Size(94, 13);
             this.label1.TabIndex = 36;
             this.label1.Text = "Nombre Empleado";
             // 
@@ -126,9 +119,10 @@ namespace PruebaSerializacionProyecto
             this.label3.AccessibleName = "";
             this.label3.AutoSize = true;
             this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.Location = new System.Drawing.Point(189, 172);
+            this.label3.Location = new System.Drawing.Point(213, 129);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 17);
+            this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 37;
             this.label3.Text = "Tipo Combustible";
             // 
@@ -137,9 +131,10 @@ namespace PruebaSerializacionProyecto
             this.label4.AccessibleName = "";
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Location = new System.Drawing.Point(338, 172);
+            this.label4.Location = new System.Drawing.Point(365, 129);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 17);
+            this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 38;
             this.label4.Text = "Valor Pesos";
             // 
@@ -148,29 +143,28 @@ namespace PruebaSerializacionProyecto
             this.label5.AccessibleName = "";
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label5.Location = new System.Drawing.Point(456, 172);
+            this.label5.Location = new System.Drawing.Point(499, 129);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 17);
+            this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 39;
             this.label5.Text = "Cantidad Litros";
             // 
             // FormReporte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 473);
+            this.ClientSize = new System.Drawing.Size(729, 505);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.ClientSize = new System.Drawing.Size(535, 406);
             this.Controls.Add(this.listReporte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seleccionar);
             this.Controls.Add(this.ComboBoxEmpleados);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnCerrar);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormReporte";
             this.Text = "FormReporte";

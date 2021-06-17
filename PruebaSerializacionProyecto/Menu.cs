@@ -26,7 +26,7 @@ namespace PruebaSerializacionProyecto
             empleados = emp;
             frmInicio = (FormInicio)inicio;
             frmCarga = new FormCarga(empleados , this);
-            frmDescarga = new FormDescarga(empleados, this , EmpleadoSeleccionado);
+            frmDescarga = new FormDescarga(empleados, this );
             frmReporte = new FormReporte(empleados, this);
             frmStock = new FormStock(empleados,this);
             InitializeComponent();
@@ -60,6 +60,7 @@ namespace PruebaSerializacionProyecto
 
         private void btnDescarga_Click(object sender, EventArgs e)
         {
+            frmDescarga.setEmpleadoSeleccionado(EmpleadoSeleccionado);
             frmDescarga.Show();
             this.Hide();
         }

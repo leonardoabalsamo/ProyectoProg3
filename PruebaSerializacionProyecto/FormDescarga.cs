@@ -16,13 +16,14 @@ namespace PruebaSerializacionProyecto
         private Sistema empleados;
         private string EmpleadoSeleccionado;
 
-        public FormDescarga(Sistema emp , Form menu , string empleadoSeleccionado)
+        public FormDescarga(Sistema emp , Form menu )
         {
             frmMenu = (Menu)menu;
             empleados = emp;
-            EmpleadoSeleccionado = empleadoSeleccionado; // Dato para saber quien fue el empleado
             InitializeComponent();
         }
+
+        public void setEmpleadoSeleccionado(string emp) { EmpleadoSeleccionado = emp; }
 
         private void FormDescarga_Load(object sender, EventArgs e)
         {

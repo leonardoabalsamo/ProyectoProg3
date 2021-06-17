@@ -170,7 +170,7 @@ namespace PruebaSerializacionProyecto
 
             foreach (var item in Ventas)
             {
-                frase = String.Concat(item.NombreEmpleado," ",item.TipoCombustible, " ", item.ValorPesos.ToString(), " " , item.CantidadLitros.ToString());
+                frase = item.ToString();
                 lVentas.Add(frase);
                 frase = null;
             }
