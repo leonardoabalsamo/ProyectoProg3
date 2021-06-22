@@ -177,6 +177,24 @@ namespace PruebaSerializacionProyecto
 
             return lVentas;
         }
+        /*
+        public List<string> NombreVentas(string NombreEmpleado)
+        {
+            List<string> ListaNombreVentas = new List<string>();
+            string frase = null;
+             foreach (var item in Ventas)
+            {
+                if(item.NombreEmpleado.Contains(NombreEmpleado))
+                { 
+                    frase = item.ToString();
+                    NombreVentas.Add(frase);
+                    frase = null;
+                }
+              return ListaNombreVentas;
+            }
+
+            return lVentas;
+        }*/
         
         /*Metodo recibe el nombre del empleado y devuelve la suma de ventas (pesos) */
         public decimal ReportePesosEmpleado(string nombreEmpleado)

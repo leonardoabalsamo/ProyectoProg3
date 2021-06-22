@@ -15,6 +15,7 @@ namespace PruebaSerializacionProyecto
     {
         Menu frmMenu;
         Sistema empleados;
+
         public FormReporte(Sistema E, Menu menu)
         {
             frmMenu = menu;
@@ -32,23 +33,30 @@ namespace PruebaSerializacionProyecto
             frmMenu.Show();
             this.Hide();
             listReporte.Items.Clear();
-
         }
 
         private void FormReporte_Load(object sender, EventArgs e)
         {
             ComboBoxEmpleados.Items.AddRange(empleados.cargaEmpleado().ToArray());
-            ComboBoxEmpleados.SelectedIndex = 0;            
             ComboBoxEmpleados.SelectedIndex = 0;
         }
 
+
+        
         private void Seleccionar_Click(object sender, EventArgs e)
         {
+            /*string Nombre=null;
+
+            if (ComboBoxEmpleados.SelectedIndex != -1) { Nombre = ComboBoxEmpleados.Text; }
+            
             listReporte.Items.Clear();
-            foreach (var item in empleados.ListaVentas())
+
+            foreach (var item in empleados.NombreVentas(Nombre))
             {
                 listReporte.Items.Add(item);
-            }
+            }*/
+           
         }
+       
     }
 }
