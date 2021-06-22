@@ -97,7 +97,6 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaLitrosUltra
             // 
-            this.VentaLitrosUltra.Enabled = false;
             this.VentaLitrosUltra.Location = new System.Drawing.Point(570, 224);
             this.VentaLitrosUltra.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosUltra.Name = "VentaLitrosUltra";
@@ -106,7 +105,6 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaLitrosPremium
             // 
-            this.VentaLitrosPremium.Enabled = false;
             this.VentaLitrosPremium.Location = new System.Drawing.Point(570, 172);
             this.VentaLitrosPremium.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosPremium.Name = "VentaLitrosPremium";
@@ -115,7 +113,6 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaLitrosDiesel
             // 
-            this.VentaLitrosDiesel.Enabled = false;
             this.VentaLitrosDiesel.Location = new System.Drawing.Point(570, 117);
             this.VentaLitrosDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosDiesel.Name = "VentaLitrosDiesel";
@@ -173,7 +170,6 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaLitrosSuper
             // 
-            this.VentaLitrosSuper.Enabled = false;
             this.VentaLitrosSuper.Location = new System.Drawing.Point(570, 69);
             this.VentaLitrosSuper.Margin = new System.Windows.Forms.Padding(4);
             this.VentaLitrosSuper.Name = "VentaLitrosSuper";
@@ -232,6 +228,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosUltra
             // 
+            this.VentaPesosUltra.Enabled = false;
             this.VentaPesosUltra.Location = new System.Drawing.Point(751, 224);
             this.VentaPesosUltra.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosUltra.Name = "VentaPesosUltra";
@@ -240,6 +237,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosPremium
             // 
+            this.VentaPesosPremium.Enabled = false;
             this.VentaPesosPremium.Location = new System.Drawing.Point(751, 172);
             this.VentaPesosPremium.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosPremium.Name = "VentaPesosPremium";
@@ -248,6 +246,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosDiesel
             // 
+            this.VentaPesosDiesel.Enabled = false;
             this.VentaPesosDiesel.Location = new System.Drawing.Point(751, 117);
             this.VentaPesosDiesel.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosDiesel.Name = "VentaPesosDiesel";
@@ -256,6 +255,7 @@ namespace PruebaSerializacionProyecto
             // 
             // VentaPesosSuper
             // 
+            this.VentaPesosSuper.Enabled = false;
             this.VentaPesosSuper.Location = new System.Drawing.Point(751, 69);
             this.VentaPesosSuper.Margin = new System.Windows.Forms.Padding(4);
             this.VentaPesosSuper.Name = "VentaPesosSuper";
