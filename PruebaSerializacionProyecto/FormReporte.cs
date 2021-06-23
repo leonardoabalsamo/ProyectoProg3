@@ -33,10 +33,7 @@ namespace PruebaSerializacionProyecto
             frmMenu.Show();
             this.Hide();
 
-            listNombre.Items.Clear();
-            listCombustible.Items.Clear();
-            listPesos.Items.Clear();
-            listLitros.Items.Clear();
+            gridReporte.Rows.Clear();
         }
 
         private void FormReporte_Load(object sender, EventArgs e)
@@ -50,20 +47,13 @@ namespace PruebaSerializacionProyecto
         private void Seleccionar_Click(object sender, EventArgs e)
         {
             string Nombre = ComboBoxEmpleados.SelectedItem.ToString();
-            listNombre.Items.Clear();
-            listCombustible.Items.Clear();
-            listPesos.Items.Clear();
-            listLitros.Items.Clear();
+            gridReporte.Rows.Clear();
 
-            foreach (var item in empleados.CargaVentaEmpleado(Nombre))
+            foreach ( var item in empleados.CargaVentaEmpleado(Nombre))
             {
-                listNombre.Items.Add(item.NombreEmpleado+"\t HOLA");
-                listCombustible.Items.Add(item.TipoCombustible);
-                listPesos.Items.Add(item.ValorPesos);
-                listLitros.Items.Add(item.CantidadLitros);
+                gridReporte.Rows.Add(item.NombreEmpleado,item.TipoCombustible,item.ValorPesos,item.CantidadLitros);
             }
            
         }
-       
     }
 }

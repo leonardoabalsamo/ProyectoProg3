@@ -22,12 +22,6 @@ namespace PruebaSerializacionProyecto
             cantidadLitros = Litros;
         }
 
-        public override string ToString() {
-            string aux;
-            aux = nombreEmpleado + "                  " + tipoCombustible + "                  " + valorPesos.ToString() + "                  " + cantidadLitros.ToString();
-            return aux;
-        }
-
         public string NombreEmpleado { get { return nombreEmpleado; } set { nombreEmpleado = value; } }
         public string TipoCombustible { get { return tipoCombustible; } set { tipoCombustible = value; } }
         public decimal ValorPesos { get { return valorPesos; } set { valorPesos = value; } }

@@ -142,57 +142,10 @@ namespace PruebaSerializacionProyecto
             return precioActualizado;
         }
 
-        /*Genero una venta desde el metodo publico*/
         public void CargarVenta(Venta venta)
         {
             Ventas.Add(venta);
         }
-
-        public string MuestraVenta(string EmpleadoSeleccionado)
-        {
-            string aux = null; string cadena = null;
-
-            foreach (var item in Ventas)
-            {
-                if (item.NombreEmpleado.Contains(EmpleadoSeleccionado))
-                {
-                    aux = (item.CantidadLitros.ToString() + "   " + item.TipoCombustible + "   " + item.ValorPesos.ToString()) + "\n";
-                }
-                cadena = string.Concat(cadena, aux);
-            }
-            return cadena;
-        }
-
-        public List<string> ListaVentas() 
-        {
-            List<string> lVentas = new List<string>();
-            string frase = null;
-
-            foreach (var item in Ventas)
-            {
-                frase = item.ToString();
-                lVentas.Add(frase);
-                frase = null;
-            }
-
-            return lVentas;
-        }
-        /*
-        public List<string> NombreVentas(string NombreEmpleado)
-        {
-            List<string> ListaNombreVentas = new List<string>();
-            string frase = null;
-             foreach (var item in Ventas)
-            {
-                if(item.NombreEmpleado.Contains(NombreEmpleado))
-                { 
-                    frase = item.ToString();
-                    NombreVentas.Add(frase);
-                    frase = null;
-                }
-            }
-              return ListaNombreVentas;
-        } */
 
         public List<Venta> CargaVentaEmpleado(string NombreEmpleado)
         {
@@ -204,21 +157,5 @@ namespace PruebaSerializacionProyecto
             }
             return EmpleadoSeleccionado;
         }
-        
-        /*Metodo recibe el nombre del empleado y devuelve la suma de ventas (pesos) */
-        public decimal ReportePesosEmpleado(string nombreEmpleado)
-        {
-            decimal suma=0;
-            foreach (var item in Ventas)
-            {
-                if (item.NombreEmpleado.Contains(nombreEmpleado))
-                {
-                    suma = suma + item.ValorPesos;
-                }
-            }
-            return suma;        // si suma vale cero el empleado no realizo ventas!
-        }
-
-
     }
 }
