@@ -57,7 +57,7 @@ namespace PruebaSerializacionProyecto
 
             foreach (var item in empleados.CargaVentaEmpleado(Nombre))
             {
-                listNombre.Items.Add(item.NombreEmpleado);
+                listNombre.Items.Add(item.NombreEmpleado+"\t HOLA");
                 listCombustible.Items.Add(item.TipoCombustible);
                 listPesos.Items.Add(item.ValorPesos);
                 listLitros.Items.Add(item.CantidadLitros);

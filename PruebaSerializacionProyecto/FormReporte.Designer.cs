@@ -47,7 +47,7 @@ namespace PruebaSerializacionProyecto
             // Regresar
             // 
             this.Regresar.Location = new System.Drawing.Point(192, 416);
-            this.Regresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Regresar.Margin = new System.Windows.Forms.Padding(4);
             this.Regresar.Name = "Regresar";
             this.Regresar.Size = new System.Drawing.Size(108, 42);
             this.Regresar.TabIndex = 29;
@@ -58,7 +58,7 @@ namespace PruebaSerializacionProyecto
             // btnCerrar
             // 
             this.btnCerrar.Location = new System.Drawing.Point(341, 416);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(108, 42);
             this.btnCerrar.TabIndex = 28;
@@ -71,7 +71,7 @@ namespace PruebaSerializacionProyecto
             this.label2.AccessibleName = "";
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(167, 30);
+            this.label2.Location = new System.Drawing.Point(49, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(320, 17);
             this.label2.TabIndex = 33;
@@ -79,7 +79,7 @@ namespace PruebaSerializacionProyecto
             // 
             // Seleccionar
             // 
-            this.Seleccionar.Location = new System.Drawing.Point(144, 102);
+            this.Seleccionar.Location = new System.Drawing.Point(26, 93);
             this.Seleccionar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Seleccionar.Name = "Seleccionar";
             this.Seleccionar.Size = new System.Drawing.Size(257, 34);
@@ -91,7 +91,7 @@ namespace PruebaSerializacionProyecto
             // ComboBoxEmpleados
             // 
             this.ComboBoxEmpleados.FormattingEnabled = true;
-            this.ComboBoxEmpleados.Location = new System.Drawing.Point(144, 65);
+            this.ComboBoxEmpleados.Location = new System.Drawing.Point(26, 56);
             this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEmpleados.Name = "ComboBoxEmpleados";
             this.ComboBoxEmpleados.Size = new System.Drawing.Size(257, 24);
