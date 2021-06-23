@@ -45,16 +45,13 @@ namespace PruebaSerializacionProyecto
         
         private void Seleccionar_Click(object sender, EventArgs e)
         {
-            /*string Nombre=null;
-
-            if (ComboBoxEmpleados.SelectedIndex != -1) { Nombre = ComboBoxEmpleados.Text; }
-            
+            string Nombre = ComboBoxEmpleados.SelectedItem.ToString();            
             listReporte.Items.Clear();
 
-            foreach (var item in empleados.NombreVentas(Nombre))
+            foreach (var item in empleados.CargaVentaEmpleado(Nombre))
             {
                 listReporte.Items.Add(item);
-            }*/
+            }
            
         }
        

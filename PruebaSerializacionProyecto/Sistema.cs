@@ -190,11 +190,20 @@ namespace PruebaSerializacionProyecto
                     NombreVentas.Add(frase);
                     frase = null;
                 }
-              return ListaNombreVentas;
             }
+              return ListaNombreVentas;
+        } */
 
-            return lVentas;
-        }*/
+        public List<Venta> CargaVentaEmpleado(string NombreEmpleado)
+        {
+            List<Venta> EmpleadoSeleccionado = new List<Venta>(); 
+
+            foreach (var item in Ventas)
+            {
+                if (item.NombreEmpleado == NombreEmpleado) { EmpleadoSeleccionado.Add(item);}
+            }
+            return EmpleadoSeleccionado;
+        }
         
         /*Metodo recibe el nombre del empleado y devuelve la suma de ventas (pesos) */
         public decimal ReportePesosEmpleado(string nombreEmpleado)
