@@ -12,19 +12,19 @@ namespace PruebaSerializacionProyecto
 {
     public partial class FormInicio : Form
     {
-        private Sistema empleados;
+        private Sistema sistema;
         private Menu frmMenu;
         public FormInicio(Sistema s)
         {
-            empleados = s;
-            frmMenu = new Menu(empleados , this); // Pasamos la referencia del inicio a Menu
+            sistema = s;
+            frmMenu = new Menu(sistema , this); // Pasamos la referencia del inicio a Menu
 
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.AddRange(empleados.cargaEmpleado().ToArray());
+            comboBox1.Items.AddRange(sistema.cargaEmpleado().ToArray());
             comboBox1.SelectedIndex = 0; 
         }
 

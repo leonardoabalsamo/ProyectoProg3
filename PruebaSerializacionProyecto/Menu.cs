@@ -14,21 +14,21 @@ namespace PruebaSerializacionProyecto
     {
         private string label;
         private string EmpleadoSeleccionado;
-        private Sistema empleados;
+        private Sistema sistema;
         private FormCarga frmCarga;
         private FormDescarga frmDescarga;
         private FormInicio frmInicio;
         private FormReporte frmReporte;
         private FormStock frmStock;
 
-        public Menu(Sistema emp , Form inicio)
+        public Menu(Sistema sis , Form inicio)
         {
-            empleados = emp;
+            sistema = sis;
             frmInicio = (FormInicio)inicio;
-            frmCarga = new FormCarga(empleados , this);
-            frmDescarga = new FormDescarga(empleados, this );
-            frmReporte = new FormReporte(empleados, this);
-            frmStock = new FormStock(empleados,this);
+            frmCarga = new FormCarga(sistema , this);
+            frmDescarga = new FormDescarga(sistema, this );
+            frmReporte = new FormReporte(sistema, this);
+            frmStock = new FormStock(sistema,this);
             InitializeComponent();
         }
 

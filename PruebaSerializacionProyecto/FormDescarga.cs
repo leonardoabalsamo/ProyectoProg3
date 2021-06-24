@@ -13,13 +13,13 @@ namespace PruebaSerializacionProyecto
     public partial class FormDescarga : Form
     {
         private Menu frmMenu;
-        private Sistema empleados;
+        private Sistema sistema;
         private string EmpleadoSeleccionado;
 
-        public FormDescarga(Sistema emp , Form menu )
+        public FormDescarga(Sistema sis , Form menu )
         {
             frmMenu = (Menu)menu;
-            empleados = emp;
+            sistema = sis;
             InitializeComponent();
         }
 
@@ -40,16 +40,16 @@ namespace PruebaSerializacionProyecto
             VentaPesosUltra.Enabled = false;
 
             /*Inicializo Stock consultando al método stockActual*/
-            StockSuper.Text = empleados.stockActual("Super").ToString();
-            StockDiesel.Text = empleados.stockActual("Diesel").ToString();
-            StockPremium.Text = empleados.stockActual("Premium").ToString();
-            StockUltra.Text = empleados.stockActual("Ultra Diesel").ToString();
+            StockSuper.Text = sistema.stockActual("Super").ToString();
+            StockDiesel.Text = sistema.stockActual("Diesel").ToString();
+            StockPremium.Text = sistema.stockActual("Premium").ToString();
+            StockUltra.Text = sistema.stockActual("Ultra Diesel").ToString();
 
             /*Inicializo Precio consultando al método precioActual*/
-            PrecioSuper.Text = empleados.precioActual("Super").ToString();
-            PrecioDiesel.Text = empleados.precioActual("Diesel").ToString();
-            PrecioPremium.Text = empleados.precioActual("Premium").ToString();
-            PrecioUltra.Text = empleados.precioActual("Ultra Diesel").ToString();
+            PrecioSuper.Text = sistema.precioActual("Super").ToString();
+            PrecioDiesel.Text = sistema.precioActual("Diesel").ToString();
+            PrecioPremium.Text = sistema.precioActual("Premium").ToString();
+            PrecioUltra.Text = sistema.precioActual("Ultra Diesel").ToString();
 
             VentaLitrosSuper.Text = 0.ToString();
             VentaLitrosDiesel.Text = 0.ToString();
@@ -69,12 +69,12 @@ namespace PruebaSerializacionProyecto
             if (VentaLitrosSuper.Text != 0.ToString())
             {
 
-                if (Decimal.Parse(VentaLitrosSuper.Text) <= empleados.stockActual("Super"))
+                if (Decimal.Parse(VentaLitrosSuper.Text) <= sistema.stockActual("Super"))
                 {
                     VentaPesosSuper.Text = (Decimal.Parse(VentaLitrosSuper.Text) * Decimal.Parse(PrecioSuper.Text)).ToString();
-                    empleados.descontarStock("Super", VentaLitrosSuper.Text);
+                    sistema.descontarStock("Super", VentaLitrosSuper.Text);
                     Venta Super = new Venta(EmpleadoSeleccionado, "Super", Decimal.Parse(VentaPesosSuper.Text), Decimal.Parse(VentaLitrosSuper.Text));
-                    empleados.CargarVenta(Super);
+                    sistema.CargarVenta(Super);
                     VentaLitrosSuper.Text = 0.ToString();
                 }
                 else
@@ -87,12 +87,12 @@ namespace PruebaSerializacionProyecto
             if (VentaLitrosDiesel.Text != 0.ToString())
             {
 
-                if (Decimal.Parse(VentaLitrosDiesel.Text) <= empleados.stockActual("Diesel"))
+                if (Decimal.Parse(VentaLitrosDiesel.Text) <= sistema.stockActual("Diesel"))
                 {
                     VentaPesosDiesel.Text = (Decimal.Parse(VentaLitrosDiesel.Text) * Decimal.Parse(PrecioDiesel.Text)).ToString();
-                    empleados.descontarStock("Diesel", VentaLitrosDiesel.Text);
+                    sistema.descontarStock("Diesel", VentaLitrosDiesel.Text);
                     Venta Diesel = new Venta(EmpleadoSeleccionado, "Diesel", Decimal.Parse(VentaPesosDiesel.Text), Decimal.Parse(VentaLitrosDiesel.Text));
-                    empleados.CargarVenta(Diesel);
+                    sistema.CargarVenta(Diesel);
                     VentaLitrosDiesel.Text = 0.ToString();
                 }
                 else
@@ -105,12 +105,12 @@ namespace PruebaSerializacionProyecto
             if (VentaLitrosPremium.Text != 0.ToString())
             {
 
-                if (Decimal.Parse(VentaLitrosPremium.Text) <= empleados.stockActual("Premium"))
+                if (Decimal.Parse(VentaLitrosPremium.Text) <= sistema.stockActual("Premium"))
                 {
                     VentaPesosPremium.Text = (Decimal.Parse(VentaLitrosPremium.Text) * Decimal.Parse(PrecioPremium.Text)).ToString();
-                    empleados.descontarStock("Premium", VentaLitrosPremium.Text);
+                    sistema.descontarStock("Premium", VentaLitrosPremium.Text);
                     Venta Premium = new Venta(EmpleadoSeleccionado, "Premium", Decimal.Parse(VentaPesosPremium.Text), Decimal.Parse(VentaLitrosPremium.Text));
-                    empleados.CargarVenta(Premium);
+                    sistema.CargarVenta(Premium);
                     VentaLitrosPremium.Text = 0.ToString();
                 }
                 else
@@ -123,12 +123,12 @@ namespace PruebaSerializacionProyecto
             if (VentaLitrosUltra.Text != 0.ToString())
             {
 
-                if (Decimal.Parse(VentaLitrosUltra.Text) <= empleados.stockActual("Ultra Diesel"))
+                if (Decimal.Parse(VentaLitrosUltra.Text) <= sistema.stockActual("Ultra Diesel"))
                 {
                     VentaPesosUltra.Text = (Decimal.Parse(VentaLitrosUltra.Text) * Decimal.Parse(PrecioUltra.Text)).ToString();
-                    empleados.descontarStock("Ultra Diesel", VentaLitrosDiesel.Text);
+                    sistema.descontarStock("Ultra Diesel", VentaLitrosDiesel.Text);
                     Venta Ultra = new Venta(EmpleadoSeleccionado, "Ultra Diesel", Decimal.Parse(VentaPesosUltra.Text), Decimal.Parse(VentaLitrosUltra.Text));
-                    empleados.CargarVenta(Ultra);
+                    sistema.CargarVenta(Ultra);
                     VentaLitrosUltra.Text = 0.ToString();
                 }
                 else
@@ -141,10 +141,10 @@ namespace PruebaSerializacionProyecto
 
             /*Actualizo el stock en función de lo descargado*/
 
-            StockSuper.Text = empleados.stockActual("Super").ToString();
-            StockDiesel.Text = empleados.stockActual("Diesel").ToString();
-            StockPremium.Text = empleados.stockActual("Premium").ToString();
-            StockUltra.Text = empleados.stockActual("Ultra Diesel").ToString();
+            StockSuper.Text = sistema.stockActual("Super").ToString();
+            StockDiesel.Text = sistema.stockActual("Diesel").ToString();
+            StockPremium.Text = sistema.stockActual("Premium").ToString();
+            StockUltra.Text = sistema.stockActual("Ultra Diesel").ToString();
 
        
         }
@@ -248,16 +248,16 @@ namespace PruebaSerializacionProyecto
         private void FormDescarga_Activated(object sender, EventArgs e)
         {
             /*Inicializo Precio consultando al método precioActual*/
-            PrecioSuper.Text = empleados.precioActual("Super").ToString();
-            PrecioDiesel.Text = empleados.precioActual("Diesel").ToString();
-            PrecioPremium.Text = empleados.precioActual("Premium").ToString();
-            PrecioUltra.Text = empleados.precioActual("Ultra Diesel").ToString();
+            PrecioSuper.Text = sistema.precioActual("Super").ToString();
+            PrecioDiesel.Text = sistema.precioActual("Diesel").ToString();
+            PrecioPremium.Text = sistema.precioActual("Premium").ToString();
+            PrecioUltra.Text = sistema.precioActual("Ultra Diesel").ToString();
 
             /*Inicializo Stock consultando al método stockActual*/
-            StockSuper.Text = empleados.stockActual("Super").ToString();
-            StockDiesel.Text = empleados.stockActual("Diesel").ToString();
-            StockPremium.Text = empleados.stockActual("Premium").ToString();
-            StockUltra.Text = empleados.stockActual("Ultra Diesel").ToString();
+            StockSuper.Text = sistema.stockActual("Super").ToString();
+            StockDiesel.Text = sistema.stockActual("Diesel").ToString();
+            StockPremium.Text = sistema.stockActual("Premium").ToString();
+            StockUltra.Text = sistema.stockActual("Ultra Diesel").ToString();
         }
     }
 }

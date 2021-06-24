@@ -29,6 +29,7 @@ namespace PruebaSerializacionProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.label1 = new System.Windows.Forms.Label();
             this.btnCarga = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -41,19 +42,19 @@ namespace PruebaSerializacionProyecto
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 17);
+            this.label1.Size = new System.Drawing.Size(196, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Seleccione la Opción:";
             // 
             // btnCarga
             // 
-            this.btnCarga.Location = new System.Drawing.Point(41, 104);
-            this.btnCarga.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarga.Location = new System.Drawing.Point(19, 66);
             this.btnCarga.Name = "btnCarga";
-            this.btnCarga.Size = new System.Drawing.Size(256, 64);
+            this.btnCarga.Size = new System.Drawing.Size(192, 52);
             this.btnCarga.TabIndex = 1;
             this.btnCarga.Text = "Carga de combustible";
             this.btnCarga.UseVisualStyleBackColor = true;
@@ -61,21 +62,21 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(350, 349);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(19, 223);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(188, 60);
+            this.btnCerrar.Size = new System.Drawing.Size(86, 38);
             this.btnCerrar.TabIndex = 2;
-            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.Text = "Salir";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // regresaInicio
             // 
-            this.regresaInicio.Location = new System.Drawing.Point(109, 349);
-            this.regresaInicio.Margin = new System.Windows.Forms.Padding(4);
+            this.regresaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regresaInicio.Location = new System.Drawing.Point(323, 223);
             this.regresaInicio.Name = "regresaInicio";
-            this.regresaInicio.Size = new System.Drawing.Size(188, 60);
+            this.regresaInicio.Size = new System.Drawing.Size(86, 38);
             this.regresaInicio.TabIndex = 3;
             this.regresaInicio.Text = "Regresar";
             this.regresaInicio.UseVisualStyleBackColor = true;
@@ -83,10 +84,10 @@ namespace PruebaSerializacionProyecto
             // 
             // btnStock
             // 
-            this.btnStock.Location = new System.Drawing.Point(41, 212);
-            this.btnStock.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStock.Location = new System.Drawing.Point(19, 124);
             this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(256, 64);
+            this.btnStock.Size = new System.Drawing.Size(192, 52);
             this.btnStock.TabIndex = 4;
             this.btnStock.Text = "Stock";
             this.btnStock.UseVisualStyleBackColor = true;
@@ -94,10 +95,10 @@ namespace PruebaSerializacionProyecto
             // 
             // btnReporte
             // 
-            this.btnReporte.Location = new System.Drawing.Point(350, 212);
-            this.btnReporte.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.Location = new System.Drawing.Point(217, 124);
             this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(256, 64);
+            this.btnReporte.Size = new System.Drawing.Size(192, 52);
             this.btnReporte.TabIndex = 5;
             this.btnReporte.Text = "Reporte";
             this.btnReporte.UseVisualStyleBackColor = true;
@@ -105,10 +106,10 @@ namespace PruebaSerializacionProyecto
             // 
             // btnDescarga
             // 
-            this.btnDescarga.Location = new System.Drawing.Point(350, 104);
-            this.btnDescarga.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDescarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescarga.Location = new System.Drawing.Point(217, 66);
             this.btnDescarga.Name = "btnDescarga";
-            this.btnDescarga.Size = new System.Drawing.Size(256, 64);
+            this.btnDescarga.Size = new System.Drawing.Size(192, 52);
             this.btnDescarga.TabIndex = 6;
             this.btnDescarga.Text = "Descarga de combustible";
             this.btnDescarga.UseVisualStyleBackColor = true;
@@ -116,9 +117,9 @@ namespace PruebaSerializacionProyecto
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 433);
+            this.ClientSize = new System.Drawing.Size(421, 272);
             this.Controls.Add(this.btnDescarga);
             this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.btnStock);
@@ -126,9 +127,9 @@ namespace PruebaSerializacionProyecto
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnCarga);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
-            this.Text = "Menu";
+            this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

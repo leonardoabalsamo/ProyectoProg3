@@ -107,6 +107,9 @@
     <EmbeddedResource Include="FormDescarga.resx">
       <DependentUpon>FormDescarga.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.aa.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
       <DependentUpon>FormInicio.cs</DependentUpon>
     </EmbeddedResource>
