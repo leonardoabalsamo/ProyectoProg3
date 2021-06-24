@@ -13,11 +13,11 @@ namespace PruebaSerializacionProyecto
     public partial class FormStock : Form
     {
         Menu frmMenu;
-        Sistema empleado;
-        public FormStock(Sistema emp,Menu menu)
+        Sistema sistema;
+        public FormStock(Sistema sis,Menu menu)
         {
             frmMenu = menu;
-            empleado = emp;
+            sistema = sis;
             InitializeComponent();
         }
 
@@ -34,32 +34,32 @@ namespace PruebaSerializacionProyecto
 
         private void FormStock_Load(object sender, EventArgs e)
         {
-            stockSuperActual.Text = empleado.stockActual("Super").ToString();
+            stockSuperActual.Text = sistema.stockActual("Super").ToString();
             barraProgresoSuper.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockSuperActual.Text)).ToString());
 
-            stockDieselActual.Text = empleado.stockActual("Diesel").ToString();
+            stockDieselActual.Text = sistema.stockActual("Diesel").ToString();
             barraProgresoDiesel.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockDieselActual.Text)).ToString());
 
-            stockPremiumActual.Text = empleado.stockActual("Premium").ToString();
+            stockPremiumActual.Text = sistema.stockActual("Premium").ToString();
             barraProgresoPremium.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockPremiumActual.Text)).ToString());
 
-            stockUltraActual.Text = empleado.stockActual("Ultra Diesel").ToString();
+            stockUltraActual.Text = sistema.stockActual("Ultra Diesel").ToString();
             barraProgresoUltra.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockUltraActual.Text)).ToString());
 
         }
 
         private void FormStock_Activated(object sender, EventArgs e)
         {
-            stockSuperActual.Text = empleado.stockActual("Super").ToString();
+            stockSuperActual.Text = sistema.stockActual("Super").ToString();
             barraProgresoSuper.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockSuperActual.Text)).ToString());
 
-            stockDieselActual.Text = empleado.stockActual("Diesel").ToString();
+            stockDieselActual.Text = sistema.stockActual("Diesel").ToString();
             barraProgresoDiesel.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockDieselActual.Text)).ToString());
 
-            stockPremiumActual.Text = empleado.stockActual("Premium").ToString();
+            stockPremiumActual.Text = sistema.stockActual("Premium").ToString();
             barraProgresoPremium.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockPremiumActual.Text)).ToString());
 
-            stockUltraActual.Text = empleado.stockActual("Ultra Diesel").ToString();
+            stockUltraActual.Text = sistema.stockActual("Ultra Diesel").ToString();
             barraProgresoUltra.Value = Int32.Parse(Decimal.Round(Decimal.Parse(stockUltraActual.Text)).ToString());
         }
     }

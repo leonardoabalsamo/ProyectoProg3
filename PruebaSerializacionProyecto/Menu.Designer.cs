@@ -42,16 +42,17 @@ namespace PruebaSerializacionProyecto
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 16);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(16, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 24);
+            this.label1.Size = new System.Drawing.Size(166, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Seleccione la Opción:";
             // 
             // btnCarga
             // 
-            this.btnCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarga.Location = new System.Drawing.Point(19, 66);
             this.btnCarga.Name = "btnCarga";
             this.btnCarga.Size = new System.Drawing.Size(192, 52);
@@ -62,7 +63,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Location = new System.Drawing.Point(19, 223);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(86, 38);
@@ -73,7 +74,7 @@ namespace PruebaSerializacionProyecto
             // 
             // regresaInicio
             // 
-            this.regresaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regresaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regresaInicio.Location = new System.Drawing.Point(323, 223);
             this.regresaInicio.Name = "regresaInicio";
             this.regresaInicio.Size = new System.Drawing.Size(86, 38);
@@ -84,7 +85,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnStock
             // 
-            this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStock.Location = new System.Drawing.Point(19, 124);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(192, 52);
@@ -95,7 +96,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnReporte
             // 
-            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporte.Location = new System.Drawing.Point(217, 124);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(192, 52);
@@ -106,7 +107,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnDescarga
             // 
-            this.btnDescarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDescarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDescarga.Location = new System.Drawing.Point(217, 66);
             this.btnDescarga.Name = "btnDescarga";
             this.btnDescarga.Size = new System.Drawing.Size(192, 52);

@@ -60,6 +60,7 @@ namespace PruebaSerializacionProyecto
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label2.Name = "label2";
             // 
             // FormInicio

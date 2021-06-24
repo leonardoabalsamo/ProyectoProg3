@@ -14,12 +14,12 @@ namespace PruebaSerializacionProyecto
     public partial class FormReporte : Form
     {
         Menu frmMenu;
-        Sistema empleados;
+        Sistema sistema;
 
-        public FormReporte(Sistema E, Menu menu)
+        public FormReporte(Sistema sis, Menu menu)
         {
             frmMenu = menu;
-            empleados = E;
+            sistema = sis;
             InitializeComponent();
         }
 
@@ -38,7 +38,7 @@ namespace PruebaSerializacionProyecto
 
         private void FormReporte_Load(object sender, EventArgs e)
         {
-            ComboBoxEmpleados.Items.AddRange(empleados.cargaEmpleado().ToArray());
+            ComboBoxEmpleados.Items.AddRange(sistema.cargaEmpleado().ToArray());
             ComboBoxEmpleados.SelectedIndex = 0;
         }
 
@@ -49,7 +49,7 @@ namespace PruebaSerializacionProyecto
             string Nombre = ComboBoxEmpleados.SelectedItem.ToString();
             gridReporte.Rows.Clear();
 
-            foreach ( var item in empleados.CargaVentaEmpleado(Nombre))
+            foreach ( var item in sistema.CargaVentaEmpleado(Nombre))
             {
                 gridReporte.Rows.Add(item.NombreEmpleado,item.TipoCombustible,item.ValorPesos,item.CantidadLitros);
             }

@@ -114,7 +114,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Location = new System.Drawing.Point(295, 199);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(133, 34);
@@ -125,7 +125,7 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Location = new System.Drawing.Point(27, 199);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(56, 34);
@@ -205,7 +205,7 @@ namespace PruebaSerializacionProyecto
             // 
             // RegresarMenu
             // 
-            this.RegresarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegresarMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegresarMenu.Location = new System.Drawing.Point(434, 199);
             this.RegresarMenu.Name = "RegresarMenu";
             this.RegresarMenu.Size = new System.Drawing.Size(82, 34);
@@ -259,6 +259,7 @@ namespace PruebaSerializacionProyecto
             // btnSuper
             // 
             this.btnSuper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuper.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnSuper.Location = new System.Drawing.Point(27, 46);
             this.btnSuper.Name = "btnSuper";
             this.btnSuper.Size = new System.Drawing.Size(115, 26);
@@ -270,6 +271,7 @@ namespace PruebaSerializacionProyecto
             // btnDiesel
             // 
             this.btnDiesel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiesel.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnDiesel.Location = new System.Drawing.Point(27, 78);
             this.btnDiesel.Name = "btnDiesel";
             this.btnDiesel.Size = new System.Drawing.Size(115, 25);
@@ -281,6 +283,7 @@ namespace PruebaSerializacionProyecto
             // btnPremium
             // 
             this.btnPremium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPremium.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnPremium.Location = new System.Drawing.Point(27, 110);
             this.btnPremium.Name = "btnPremium";
             this.btnPremium.Size = new System.Drawing.Size(115, 27);
@@ -292,6 +295,7 @@ namespace PruebaSerializacionProyecto
             // btnUltra
             // 
             this.btnUltra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUltra.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnUltra.Location = new System.Drawing.Point(27, 143);
             this.btnUltra.Name = "btnUltra";
             this.btnUltra.Size = new System.Drawing.Size(115, 28);
@@ -333,7 +337,7 @@ namespace PruebaSerializacionProyecto
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDescarga";
             this.Text = "Venta de Combustible";
             this.Activated += new System.EventHandler(this.FormDescarga_Activated);

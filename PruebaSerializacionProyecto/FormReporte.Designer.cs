@@ -29,6 +29,7 @@ namespace PruebaSerializacionProyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReporte));
             this.Regresar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,9 +45,10 @@ namespace PruebaSerializacionProyecto
             // 
             // Regresar
             // 
-            this.Regresar.Location = new System.Drawing.Point(133, 396);
+            this.Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Regresar.Location = new System.Drawing.Point(357, 372);
             this.Regresar.Name = "Regresar";
-            this.Regresar.Size = new System.Drawing.Size(81, 34);
+            this.Regresar.Size = new System.Drawing.Size(106, 34);
             this.Regresar.TabIndex = 29;
             this.Regresar.Text = "Regresar";
             this.Regresar.UseVisualStyleBackColor = true;
@@ -54,11 +56,12 @@ namespace PruebaSerializacionProyecto
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(245, 396);
+            this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(20, 372);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(81, 34);
             this.btnCerrar.TabIndex = 28;
-            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.Text = "Salir";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
@@ -67,19 +70,22 @@ namespace PruebaSerializacionProyecto
             this.label2.AccessibleName = "";
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(28, 25);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(17, 19);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 13);
+            this.label2.Size = new System.Drawing.Size(367, 17);
             this.label2.TabIndex = 33;
             this.label2.Text = "Seleccione el Empleado para generar el Reporte:";
             // 
             // Seleccionar
             // 
-            this.Seleccionar.Location = new System.Drawing.Point(31, 98);
+            this.Seleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Seleccionar.Location = new System.Drawing.Point(218, 53);
             this.Seleccionar.Margin = new System.Windows.Forms.Padding(2);
             this.Seleccionar.Name = "Seleccionar";
-            this.Seleccionar.Size = new System.Drawing.Size(193, 28);
+            this.Seleccionar.Size = new System.Drawing.Size(97, 24);
             this.Seleccionar.TabIndex = 31;
             this.Seleccionar.Text = "Seleccionar";
             this.Seleccionar.UseVisualStyleBackColor = true;
@@ -88,7 +94,7 @@ namespace PruebaSerializacionProyecto
             // ComboBoxEmpleados
             // 
             this.ComboBoxEmpleados.FormattingEnabled = true;
-            this.ComboBoxEmpleados.Location = new System.Drawing.Point(31, 68);
+            this.ComboBoxEmpleados.Location = new System.Drawing.Point(20, 54);
             this.ComboBoxEmpleados.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxEmpleados.Name = "ComboBoxEmpleados";
             this.ComboBoxEmpleados.Size = new System.Drawing.Size(194, 21);
@@ -102,9 +108,9 @@ namespace PruebaSerializacionProyecto
             this.tipoCombustible,
             this.valorPesos,
             this.cantLitros});
-            this.gridReporte.Location = new System.Drawing.Point(20, 145);
+            this.gridReporte.Location = new System.Drawing.Point(20, 94);
             this.gridReporte.Name = "gridReporte";
-            this.gridReporte.Size = new System.Drawing.Size(440, 223);
+            this.gridReporte.Size = new System.Drawing.Size(443, 257);
             this.gridReporte.TabIndex = 40;
             // 
             // nombreEmpleado
@@ -131,16 +137,17 @@ namespace PruebaSerializacionProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 442);
+            this.ClientSize = new System.Drawing.Size(483, 421);
             this.Controls.Add(this.gridReporte);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Seleccionar);
             this.Controls.Add(this.ComboBoxEmpleados);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.btnCerrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormReporte";
-            this.Text = "FormReporte";
+            this.Text = "Reporte de Ventas";
             this.Load += new System.EventHandler(this.FormReporte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridReporte)).EndInit();
             this.ResumeLayout(false);
